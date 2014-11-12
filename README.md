@@ -27,7 +27,7 @@ Considerando o grafo a seguir de 12 vértices, mostre os resultados obtidos para
     <li>2 agrupamentos (K = 2) com sementes próximas uma da outra</li>
 </ol>
 
-<img src="readme-img/uk12.png" width=540 height=405 alt="uk12" />
+<img src="readme-img/uk12.png" width=720 height=540 alt="uk12" />
 
 [Matriz de adjacência com as distâncias entre os pontos para o grafo de 12 vértices]
 (http://www.moodle.ufscar.br/file.php/1619/Projetos/uk12distB.txt)
@@ -42,7 +42,7 @@ Considerando o grafo a seguir de 59 vértices, mostre os resultados obtidos para
     <li>3 agrupamentos (K = 3) com sementes próximas uma da outra</li>
 </ol>
 
-<img src="readme-img/uk12.png" width=540 height=405 alt="wg59" />
+<img src="readme-img/wg59.png" width=720 height=540 alt="wg59" />
 
 
 [Matriz de adjacência com as distâncias entre os pontos para o grafo de 59 vértices]
@@ -58,7 +58,7 @@ Considerando o grafo a seguir de 332 vértices (rede de aeroportos dos EUA), mos
     <li>5 agrupamentos (K = 5) com sementes próximas uma da outra</li>
 </ol>
 
-<img src="readme-img/USAir.png" width=650 height=650 alt="USAir" />
+<img src="readme-img/USAir.png" width=900 height=900 alt="USAir" />
 
 [Matriz de adjacência com as distâncias entre os pontos para o grafo de 332 vértices]
 (http://www.moodle.ufscar.br/file.php/1619/Projetos/USAir97.txt)
