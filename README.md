@@ -30,10 +30,10 @@ Considerando o grafo a seguir de 12 vértices, mostre os resultados obtidos para
 <img src="readme-img/uk12.png" width=720 height=540 alt="uk12" />
 
 [Matriz de adjacência com as distâncias entre os pontos para o grafo de 12 vértices]
-(http://www.moodle.ufscar.br/file.php/1619/Projetos/uk12distB.txt)
+(data/uk12distB.txt)
 
 [Nomes dos vértices (cidades da Inglaterra)]
-(http://people.sc.fsu.edu/~jburkardt/datasets/cities/uk12_name.txt)
+(data/uk12_name.txt)
 
 
 Considerando o grafo a seguir de 59 vértices, mostre os resultados obtidos para:
@@ -46,10 +46,10 @@ Considerando o grafo a seguir de 59 vértices, mostre os resultados obtidos para
 
 
 [Matriz de adjacência com as distâncias entre os pontos para o grafo de 59 vértices]
-(http://www.moodle.ufscar.br/file.php/1619/Projetos/wg59distB.txt)
+(data/wg59distB.txt)
 
 [Nomes dos vértices (cidades da Alemanha)]
-(http://www.moodle.ufscar.br/file.php/1619/Projetos/wg59distB.txt)
+(data/wg59distB.txt)
 
 
 Considerando o grafo a seguir de 332 vértices (rede de aeroportos dos EUA), mostre os resultados obtidos para:
@@ -61,10 +61,10 @@ Considerando o grafo a seguir de 332 vértices (rede de aeroportos dos EUA), mos
 <img src="readme-img/USAir.png" width=900 height=900 alt="USAir" />
 
 [Matriz de adjacência com as distâncias entre os pontos para o grafo de 332 vértices]
-(http://www.moodle.ufscar.br/file.php/1619/Projetos/USAir97.txt)
+(data/USAir97.txt)
 
 [Nomes dos vértices (cidades dos EUA)]
-(http://www.moodle.ufscar.br/file.php/1619/Projetos/USAir_names.txt)
+(data/USAir_names.txt)
 
 
 Analise os grupos obtidos em termos da extensão de cada um deles, discutindo a variabilidade dos tamanhos dos grupos em cada caso.
