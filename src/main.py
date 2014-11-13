@@ -28,5 +28,6 @@ g.add_weighted_edges_from(edges_with_weight)
 
 plot_weighted_graph(g)
 
+print g.nodes(data=True)
 #if __name__ == '__main__':
 #    pass
