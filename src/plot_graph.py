@@ -21,11 +21,11 @@ def plot_weighted_graph(G,
     weights = { (u, v): data['weight'] for u, v, data in G.edges(data=True) }
     labels = { (u): data['name'] for u, data in G.nodes(data=True) }
 
-    if(writeEdgeLabel):
+    if(writeEdgeLabel is True and (nodelist and edgelist is None)):
         nx.draw_networkx_edge_labels(
             G, pos, edge_labels=weights, font_size = font_size, font_family='sans-serif')
 
-    if(writeNodeLabel):
+    if(writeNodeLabel is True and (nodelist and edgelist is None)):
         nx.draw_networkx_labels(G, pos, labels, font_size = font_size)
 
     plt.show()
