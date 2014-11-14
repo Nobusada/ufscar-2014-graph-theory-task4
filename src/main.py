@@ -1,33 +1,11 @@
-import numpy as np
-import networkx as nx
-import matplotlib.pyplot as plt
 from plot_graph import plot_weighted_graph
+from load_graph import load_graph
 
-a = np.loadtxt('../data/uk12distB.txt')
-labels = np.loadtxt('../data/uk12_name.txt', dtype=basestring, delimiter='\n')
+data_path = '../data/'
+data_name = [[  data_path + 'uk12distB.txt',    data_path + 'uk12_name.txt'],
+             [  data_path + 'wg59distB.txt',    data_path + 'wg59_name.txt'],
+             [  data_path + 'USAir97.txt',      data_path + 'USAir_names.txt']]
 
-# Obtem as coordenadas em que o peso eh nao-nulo
-rows, cols = np.where(a > 0)
-
-# Obtem o peso de cada uma das arestas
-weight = [a[rows[i], cols[i]] for i in range(0, len(rows))]
-
-# Cria lista de arestas com peso
-edges_with_weight = zip(rows.tolist(), cols.tolist(), weight)
-
-# Cria um grafo vazio usando NetworkX
-g = nx.Graph()
-
-# Insere primeiro os vertices nomeados
-set_edges = set(rows.tolist())
-for i in range(0, len(set_edges)):
-    g.add_node(i, name=labels.tolist()[i])
-
-# Insere as arestas
-g.add_weighted_edges_from(edges_with_weight)
-
-plot_weighted_graph(g)
-
-print g.nodes(data=True)
-#if __name__ == '__main__':
-#    pass
+if __name__ == '__main__':
+    g = load_graph(data_name[0][0],data_name[0][1])
+    plot_weighted_graph(g, writeNodeLabel=True)
