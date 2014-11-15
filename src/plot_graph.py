@@ -6,7 +6,7 @@ def plot_weighted_graph(G,
                         writeEdgeLabel = False,
                         k=2,
                         iterations=100,
-                        node_size=4000,
+                        node_size=1000,
                         node_color='fuchsia',
                         font_size=9,
                         nodelist=None,
@@ -27,6 +27,8 @@ def plot_weighted_graph(G,
 
     if(writeNodeLabel is True and (nodelist and edgelist is None)):
         nx.draw_networkx_labels(G, pos, labels, font_size = font_size)
+    else:
+        nx.draw_networkx_labels(G, pos)
 
     plt.show()
     plt.close()

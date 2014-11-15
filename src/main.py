@@ -1,11 +1,58 @@
 from plot_graph import plot_weighted_graph
 from load_graph import load_graph
 import networkx as nx
+import numpy as np
 
 data_path = '../data/'
 data_name = [[  data_path + 'uk12distB.txt',    data_path + 'uk12_name.txt'],
              [  data_path + 'wg59distB.txt',    data_path + 'wg59_name.txt'],
              [  data_path + 'USAir97.txt',      data_path + 'USAir_names.txt']]
+
+def Dijkstra(G, seed):
+#   Como referencia foi utilizado o pseudocode encontrado em:
+#       https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+#   e no codigo fornecido pelo prof. em sala de aula
+
+    # Lambda: weight de cada aresta
+    # Pi: predecessor de cada vertice
+    Lambda = {}
+    Pi = {}
+
+    # Inicializacao
+    for v in G.nodes():
+        Lambda[v] = np.inf
+        Pi[v] = None
+    Lambda[seed] = 0
+    Q = G.nodes()
+
+    # Loop principal
+    while Q:
+        # smallest = infinito para comparacao
+        # u sempre primeiro valor (garante existencia)
+        smallest = np.inf
+        u = Q[0]
+
+        # ao final do loop, u contem a menor distancia e smallest o menor valor
+        # e recebe os vertices (indice), w os pesos dos vertices (valor)
+        for e, w in Lambda.items():
+            if (w < smallest) and (e in Q):
+                smallest = w
+                u = e
+
+        # remover u de Q
+        del Q[Q.index(u)]
+
+
+        for v in G.neighbors(u):
+            alt = Lambda[u] + G[u][v]['weight']
+            # Verifica se v ainda esta na lista Q e se caminho eh menor
+            if (v in Q) and (alt < Lambda[v]):
+                Lambda[v] = alt
+                Pi[v] = u
+
+    print Lambda
+    print Pi
+
 
 if __name__ == '__main__':
     g = load_graph(data_name[0][0],data_name[0][1])
@@ -24,7 +71,9 @@ if __name__ == '__main__':
             temp.append(t)
         edges.append(temp)
 
-
+    Dijkstra(g, 0)
+    print path
+    #plot_weighted_graph(g)
 """
 
     "The students that, like the wild animal being prepared for its tricks in the circus called 'life',
