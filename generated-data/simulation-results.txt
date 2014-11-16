@@ -1,59 +1,1643 @@
-Simulacao gerada em 2014-11-16 03:10:08.376000
+Simulacao gerada em 2014-11-16 06:41:21.963000
 
 Grafo UK12:
 
 	a) Sementes utilizadas: [1, 11]
 		Lambda:
-			0 : 310.0
-			1 : 0
-			2 : 253.0
-			3 : 180.0
-			4 : 165.0
-			5 : 190.0
-			6 : 138.0
-			7 : 108.0
-			8 : 205.0
-			9 : 263.0
-			10 : 255.0
-			11 : 0
+			0		Aberystwyth		310.0
+			1		Brighton		0
+			2		Edinburgh		253.0
+			3		Exeter			180.0
+			4		Glasgow			165.0
+			5		Inverness		190.0
+			6		Liverpool		138.0
+			7		London			108.0
+			8		Newcastle		205.0
+			9		Nottingham		263.0
+			10		Oxford			255.0
+			11		Stratford		0
 		Pi:
-			0 : 9
-			1 : None
-			2 : 4
-			3 : 1
-			4 : 11
-			5 : 1
-			6 : 1
-			7 : 11
-			8 : 6
-			9 : 7
-			10 : 6
-			11 : None
+			0		Aberystwyth		9
+			1		Brighton		None
+			2		Edinburgh		4
+			3		Exeter			1
+			4		Glasgow			11
+			5		Inverness		1
+			6		Liverpool		1
+			7		London			11
+			8		Newcastle		6
+			9		Nottingham		7
+			10		Oxford			6
+			11		Stratford		None
 
-	b) Sementes utilizadas: [9, 11]
+	b) Sementes utilizadas: [5, 1]
 		Lambda:
-			0 : 47.0
-			1 : 347.0
-			2 : 206.0
-			3 : 269.0
-			4 : 130.0
-			5 : 157.0
-			6 : 291.0
-			7 : 108.0
-			8 : 299.0
-			9 : 0
-			10 : 202.0
-			11 : 0
+			0		Aberystwyth		204.0
+			1		Brighton		0
+			2		Edinburgh		327.0
+			3		Exeter			180.0
+			4		Glasgow			287.0
+			5		Inverness		0
+			6		Liverpool		138.0
+			7		London			122.0
+			8		Newcastle		205.0
+			9		Nottingham		157.0
+			10		Oxford			255.0
+			11		Stratford		230.0
 		Pi:
-			0 : 9
-			1 : 5
-			2 : 9
-			3 : 4
-			4 : 9
-			5 : 9
-			6 : 7
-			7 : 11
-			8 : 9
-			9 : None
-			10 : 9
-			11 : None
+			0		Aberystwyth		9
+			1		Brighton		None
+			2		Edinburgh		6
+			3		Exeter			1
+			4		Glasgow			9
+			5		Inverness		None
+			6		Liverpool		1
+			7		London			5
+			8		Newcastle		6
+			9		Nottingham		5
+			10		Oxford			6
+			11		Stratford		7
+
+Grafo WG59:
+
+	a) Sementes utilizadas: [18, 5, 29]
+		Lambda:
+			0		Augsburg		58.0
+			1		Bielefeld		40.0
+			2		Bochum			5.0
+			3		Bremen			72.0
+			4		Darmstadt		30.0
+			5		Essen			0
+			6		Freiburg		82.0
+			7		Giessen			50.0
+			8		Hamburg			102.0
+			9		Hannover		70.0
+			10		Heilbronn		32.0
+			11		Kaiserslautern	57.0
+			12		Karlsruhe		50.0
+			13		Kassel			57.0
+			14		Kempten			82.0
+			15		Koblenz			45.0
+			16		Koeln			17.0
+			17		Landshut		62.0
+			18		Lichtenfels		0
+			19		Mainz			40.0
+			20		Muenchen		72.0
+			21		Muenster		23.0
+			22		Neuss			10.0
+			23		Nuernburg		25.0
+			24		Oldenburg		68.0
+			25		Regensburg		46.0
+			26		Rendsburg		118.0
+			27		Stuttgart		41.0
+			28		Ulm				59.0
+			29		Wuerzburg		0
+			30		Aachen			31.0
+			31		Ansbach			20.0
+			32		Aschaffenburg	24.0
+			33		Bamberg			8.0
+			34		Bayreuth		9.0
+			35		Bonn			27.0
+			36		Braunschweig	80.0
+			37		Bremen			77.0
+			38		Coburg			5.0
+			39		Dortmund		15.0
+			40		Duesseldorf		8.0
+			41		Duisburg		7.0
+			42		Erlangen		20.0
+			43		Frankfurt		33.0
+			44		Fulda			27.0
+			45		Fuerth			24.0
+			46		Gelsen-Kirchen	4.0
+			47		Gummersburg		24.0
+			48		Hagen			11.0
+			49		Hersbruck		25.0
+			50		Ingolstadt		47.0
+			51		Kiel			124.0
+			52		Mannheim		44.0
+			53		Marburg			45.0
+			54		Offenburg		70.0
+			55		Osnabrueck		38.0
+			56		Reutlingen		50.0
+			57		Saarbruecken	76.0
+			58		Siegen			33.0
+		Pi:
+			0		Augsburg		31
+			1		Bielefeld		2
+			2		Bochum			5
+			3		Bremen			55
+			4		Darmstadt		29
+			5		Essen			None
+			6		Freiburg		10
+			7		Giessen			58
+			8		Hamburg			55
+			9		Hannover		1
+			10		Heilbronn		29
+			11		Kaiserslautern	32
+			12		Karlsruhe		10
+			13		Kassel			48
+			14		Kempten			31
+			15		Koblenz			16
+			16		Koeln			5
+			17		Landshut		25
+			18		Lichtenfels		None
+			19		Mainz			32
+			20		Muenchen		31
+			21		Muenster		46
+			22		Neuss			5
+			23		Nuernburg		18
+			24		Oldenburg		46
+			25		Regensburg		34
+			26		Rendsburg		46
+			27		Stuttgart		29
+			28		Ulm				31
+			29		Wuerzburg		None
+			30		Aachen			22
+			31		Ansbach			29
+			32		Aschaffenburg	29
+			33		Bamberg			18
+			34		Bayreuth		18
+			35		Bonn			16
+			36		Braunschweig	38
+			37		Bremen			46
+			38		Coburg			18
+			39		Dortmund		5
+			40		Duesseldorf		5
+			41		Duisburg		5
+			42		Erlangen		18
+			43		Frankfurt		32
+			44		Fulda			29
+			45		Fuerth			18
+			46		Gelsen-Kirchen	5
+			47		Gummersburg		48
+			48		Hagen			5
+			49		Hersbruck		18
+			50		Ingolstadt		31
+			51		Kiel			55
+			52		Mannheim		32
+			53		Marburg			48
+			54		Offenburg		12
+			55		Osnabrueck		21
+			56		Reutlingen		27
+			57		Saarbruecken	11
+			58		Siegen			48
+
+	b) Sementes utilizadas: [12, 27, 29]
+		Lambda:
+			0		Augsburg		48.0
+			1		Bielefeld		90.0
+			2		Bochum			94.0
+			3		Bremen			129.0
+			4		Darmstadt		30.0
+			5		Essen			98.0
+			6		Freiburg		38.0
+			7		Giessen			51.0
+			8		Hamburg			141.0
+			9		Hannover		96.0
+			10		Heilbronn		11.0
+			11		Kaiserslautern	21.0
+			12		Karlsruhe		0
+			13		Kassel			57.0
+			14		Kempten			48.0
+			15		Koblenz			57.0
+			16		Koeln			85.0
+			17		Landshut		71.0
+			18		Lichtenfels		31.0
+			19		Mainz			38.0
+			20		Muenchen		65.0
+			21		Muenster		107.0
+			22		Neuss			95.0
+			23		Nuernburg		31.0
+			24		Oldenburg		136.0
+			25		Regensburg		59.0
+			26		Rendsburg		166.0
+			27		Stuttgart		0
+			28		Ulm				24.0
+			29		Wuerzburg		0
+			30		Aachen			97.0
+			31		Ansbach			20.0
+			32		Aschaffenburg	24.0
+			33		Bamberg			23.0
+			34		Bayreuth		34.0
+			35		Bonn			75.0
+			36		Braunschweig	94.0
+			37		Bremen			136.0
+			38		Coburg			29.0
+			39		Dortmund		91.0
+			40		Duesseldorf		94.0
+			41		Duisburg		99.0
+			42		Erlangen		27.0
+			43		Frankfurt		33.0
+			44		Fulda			27.0
+			45		Fuerth			28.0
+			46		Gelsen-Kirchen	98.0
+			47		Gummersburg		76.0
+			48		Hagen			87.0
+			49		Hersbruck		35.0
+			50		Ingolstadt		47.0
+			51		Kiel			167.0
+			52		Mannheim		17.0
+			53		Marburg			53.0
+			54		Offenburg		20.0
+			55		Osnabrueck		104.0
+			56		Reutlingen		9.0
+			57		Saarbruecken	36.0
+			58		Siegen			65.0
+		Pi:
+			0		Augsburg		28
+			1		Bielefeld		13
+			2		Bochum			48
+			3		Bremen			9
+			4		Darmstadt		29
+			5		Essen			48
+			6		Freiburg		12
+			7		Giessen			32
+			8		Hamburg			9
+			9		Hannover		13
+			10		Heilbronn		27
+			11		Kaiserslautern	12
+			12		Karlsruhe		None
+			13		Kassel			44
+			14		Kempten			27
+			15		Koblenz			19
+			16		Koeln			15
+			17		Landshut		45
+			18		Lichtenfels		33
+			19		Mainz			12
+			20		Muenchen		28
+			21		Muenster		39
+			22		Neuss			35
+			23		Nuernburg		45
+			24		Oldenburg		55
+			25		Regensburg		42
+			26		Rendsburg		8
+			27		Stuttgart		None
+			28		Ulm				27
+			29		Wuerzburg		None
+			30		Aachen			35
+			31		Ansbach			29
+			32		Aschaffenburg	29
+			33		Bamberg			29
+			34		Bayreuth		33
+			35		Bonn			15
+			36		Braunschweig	44
+			37		Bremen			3
+			38		Coburg			29
+			39		Dortmund		58
+			40		Duesseldorf		58
+			41		Duisburg		43
+			42		Erlangen		29
+			43		Frankfurt		32
+			44		Fulda			29
+			45		Fuerth			29
+			46		Gelsen-Kirchen	53
+			47		Gummersburg		43
+			48		Hagen			44
+			49		Hersbruck		42
+			50		Ingolstadt		31
+			51		Kiel			8
+			52		Mannheim		12
+			53		Marburg			44
+			54		Offenburg		12
+			55		Osnabrueck		1
+			56		Reutlingen		27
+			57		Saarbruecken	12
+			58		Siegen			32
+
+Grafo USAir97:
+
+	a) Sementes utilizadas: [88, 19, 10, 21, 31]
+		Lambda:
+			0		Wiley Post-Will Rogers Mem    	0.1576
+			1		Deadhorse                     	0.1416
+			2		Ralph Wien Memorial           	0.1393
+			3		Fairbanks Intl                	0.0915
+			4		Nome                          	0.1399
+			5		St Mary's                     	0.0176
+			6		Aniak                         	0.0173
+			7		Anchorage Intl                	0.055
+			8		Tuluksak                      	0.0022
+			9		Akiachak                      	0.0011
+			10		Akiak                         	0
+			11		Kwethluk                      	0.0021
+			12		Bethel                        	0.0033
+			13		Napaskiak                     	0.0042
+			14		Napakiak                      	0.0044
+			15		Merle K (Mudhole) Smith       	0.0311
+			16		Tuntutuliak                   	0.0053
+			17		Eek                           	0.0088
+			18		Kongiganak                    	0.0018
+			19		Kwigillingok                  	0
+			20		Quinhagak                     	0.0131
+			21		Yakutat                       	0
+			22		Dillingham                    	0.1028
+			23		King Salmon                   	0.0964
+			24		Gustavus                      	0.027
+			25		Juneau Intl                   	0.0213
+			26		Kodiak                        	0.0901
+			27		St Paul Island                	0.1649
+			28		Sitka                         	0.0168
+			29		Port Heiden                   	0.1146
+			30		James A Johnson Petersburg    	0.0043
+			31		Wrangell                      	0
+			32		Ketchikan Intl                	0.0113
+			33		Sand Point                    	0.1324
+			34		Cold Bay                      	0.1413
+			35		Unalaska                      	0.1643
+			36		Eareckson As                  	0.2549
+			37		Adak Naf                      	0.2172
+			38		Bellingham Intl               	0.1138
+			39		Glacier Park Intl             	0.1432
+			40		Minot Intl                    	0.1912
+			41		William R Fairchild Intl      	0.1097
+			42		Grand Forks Afb               	0.1754
+			43		Grand Forks Intl              	0.1746
+			44		Spokane Intl                  	0.1252
+			45		Great Falls Intl              	0.1566
+			46		Seattle-Tacoma Intl           	0.1008
+			47		Pangborn Memorial             	0.1115
+			48		Grant County                  	0.1162
+			49		Missoula Intll                	0.1439
+			50		Hector Intll                  	0.1657
+			51		Duluth Intl                   	0.1584
+			52		Bismarck Muni                 	0.1814
+			53		Pullman/Moscow Regional       	0.1281
+			54		Helena Regional               	0.1551
+			55		Yakima Air Terminal           	0.113
+			56		Marquette County              	0.13
+			57		Lewiston-Nez Perce County     	0.1296
+			58		Tri-Cities                    	0.1205
+			59		Walla Walla Regional          	0.125
+			60		Bert Mooney                   	0.1554
+			61		Billings Logan Intl           	0.1741
+			62		Gallatin Field                	0.1622
+			63		Eastern Oregon Regional At Pen	0.1262
+			64		Portland Intl                 	0.1186
+			65		Mcnary Fld                    	0.1254
+			66		Minneapolis-St Paul Intl/Wold-	0.139
+			67		Bangor Intl                   	0.1057
+			68		Central Wisconsin             	0.1244
+			69		Cherry Capital                	0.1101
+			70		Austin Straubel Intll         	0.116
+			71		Burlington Intl               	0.0937
+			72		Outagamie County              	0.119
+			73		Roberts Field                 	0.1318
+			74		Mahlon Sweet Field            	0.1328
+			75		Rapid City Regional           	0.1815
+			76		Wittman Regional              	0.1167
+			77		Rochester Intll               	0.1316
+			78		La Crosse Muni                	0.1268
+			79		Portland Intl Jetport         	0.0923
+			80		Jackson Hole                  	0.1771
+			81		Joe Foss Field                	0.1493
+			82		Boise Air Terminal /Gowen Fld/	0.1491
+			83		Mbs Intll                     	0.0965
+			84		Fanning Field                 	0.1702
+			85		Friedman Memorial             	0.1563
+			86		North Bend Muni               	0.1409
+			87		Muskegon County               	0.116
+			88		Oneida County                 	0
+			89		Dane County Regional-Truax Fie	0.1135
+			90		Greater Rochester Intl        	0.0766
+			91		Syracuse Hancock Intl         	0.0763
+			92		Bishop Intll                  	0.0904
+			93		General Mitchell Intll        	0.1063
+			94		Greater Buffalo Intl          	0.0761
+			95		Manchester                    	0.0834
+			96		Pocatello Regional            	0.1686
+			97		Natrona County Intl           	0.2019
+			98		Kent County Intl              	0.0961
+			99		Capital City                  	0.0917
+			100		Albany County                 	0.0758
+			101		Waterloo Muni                 	0.1254
+			102		Tompkins County               	0.0878
+			103		Twin Falls-Sun Valley Regional	0.1627
+			104		Detroit City                  	0.1185
+			105		Sioux Gateway                 	0.1452
+			106		Dubuque Regional              	0.1167
+			107		Rogue Valley Intl- M          	0.1493
+			108		General Edward Lawrence Logan 	0.0806
+			109		Worcester Muni                	0.0771
+			110		Kalamazoo/Battle Creek Interna	0.0925
+			111		Detroit Metropolitan Wayne Cou	0.0834
+			112		Binghamton Regional/Edwin A Li	0.0678
+			113		Greater Rockford              	0.1083
+			114		Elmira/Corning Regional       	0.084
+			115		Klamath Falls Intll           	0.1517
+			116		Erie Intl                     	0.0759
+			117		Chicago O'hare Intl           	0.1018
+			118		Bradley Intl                  	0.0719
+			119		Cedar Rapids Muni             	0.1212
+			120		William B. Heilig Field       	0.2351
+			121		Merrill C Meigs               	0.1414
+			122		Chicago Midway                	0.101
+			123		Jack Mc Namara Field          	0.2173
+			124		Theodore Francis Green State  	0.0748
+			125		Michiana Rgnl Transportation C	0.0938
+			126		Toledo Express                	0.0817
+			127		Des Moines Intl               	0.1298
+			128		Stewart Int'l                 	0.0878
+			129		Quad-City                     	0.116
+			130		Cleveland-Hopkins Intl        	0.0726
+			131		Wilkes-Barre/Scranton Intl    	0.0598
+			132		Eppley Airfield               	0.1409
+			133		Tweed-New Haven               	0.099
+			134		Youngstown-Warren Regional    	0.0759
+			135		Westchester County            	0.0944
+			136		Fort Wayne Intll              	0.0864
+			137		Arcata                        	0.2097
+			138		Akron-Canton Regional         	0.0709
+			139		Lincoln Muni                  	0.1466
+			140		University Park               	0.0615
+			141		Elko Muni-J.C. Harris Field   	0.1722
+			142		Long Island Mac Arthur        	0.0625
+			143		Salt Lake City Intl           	0.1833
+			144		Burlington Regional           	0.1151
+			145		La Guardia                    	0.0595
+			146		Newark Intl                   	0.0579
+			147		Greater Peoria Regional       	0.1077
+			148		Lehigh Valley Intll           	0.0637
+			149		John F Kennedy Intl           	0.0589
+			150		Redding Muni                  	0.1671
+			151		Pittsburgh Intll              	0.0607
+			152		Yampa Valley                  	0.1961
+			153		Bloomington/Normal            	0.117
+			154		Purdue University             	0.1151
+			155		Mercer County                 	0.0884
+			156		Harrisburg Intll              	0.0557
+			157		University Of Illinois-Willard	0.0983
+			158		Port Columbus Intl            	0.0713
+			159		Quincy Muni Baldwin Field     	0.1206
+			160		James M Cox Dayton Intl       	0.0776
+			161		Philadelphia Intl             	0.0485
+			162		Capital                       	0.1194
+			163		Decatur                       	0.1212
+			164		Chico Muni                    	0.2156
+			165		Stapleton Intl                	0.1824
+			166		Indianapolis Intl             	0.0879
+			167		Eagle County Regional         	0.1928
+			168		Reno/Tahoe Intll              	0.1778
+			169		Atlantic City Intll           	0.0773
+			170		Hulman Regional               	0.1057
+			171		Kansas City Intl              	0.1305
+			172		Aspen-Pitkin Co/Sardy Field   	0.1938
+			173		Baltimore-Washington Intl     	0.0386
+			174		Walker Field                  	0.2019
+			175		Cincinnati/Northern Kentucky I	0.0793
+			176		Washington Dulles Intl        	0.0432
+			177		Lake Tahoe                    	0.2117
+			178		Washington National           	0.0454
+			179		Columbia Regional             	0.1179
+			180		City Of Colorado Springs Muni 	0.1814
+			181		Lambert-St Louis Intl         	0.1084
+			182		Sacramento Metropolitan       	0.1844
+			183		Gunnison County               	0.1982
+			184		Sonoma County                 	0.2034
+			185		Yeager                        	0.0821
+			186		Tri-State/Milton J.Ferguson Fi	0.0842
+			187		Pueblo Memorial               	0.1864
+			188		Louisville Intl               	0.0893
+			189		Charlottesville-Albemarle     	0.0524
+			190		Evansville Regional           	0.1021
+			191		Blue Grass                    	0.0875
+			192		Stockton Metropolitan         	0.2009
+			193		Greenbrier Valley             	0.0926
+			194		Williamson County Regional    	0.1202
+			195		Forney Aaf                    	0.1217
+			196		Metropolitan Oakland Intl     	0.1937
+			197		Wichita Mid-Continent         	0.1459
+			198		Modesto City-County--Harry Sha	0.2018
+			199		Mammoth Lakes                 	0.2131
+			200		San Francisco Intl            	0.1946
+			201		Richmond Intll                	0.0548
+			202		San Jose Intll                	0.1971
+			203		Roanoke Regional/Woodrum Field	0.0629
+			204		Merced Municipal/Macready Fiel	0.2045
+			205		Springfield Regional          	0.1295
+			206		Cape Girardeau Regional       	0.1235
+			207		Durango-La Plata County       	0.2684
+			208		Joplin Regional               	0.1345
+			209		Newport News/Williamsburg Inte	0.098
+			210		Barkley Regional              	0.1265
+			211		Norfolk Intl                  	0.0605
+			212		Fresno Air Terminal           	0.2038
+			213		Monterey Peninsula            	0.2049
+			214		Tri-Cities Regional Tn/Va     	0.0963
+			215		Tulsa Intl                    	0.1457
+			216		Nashville Intll               	0.0973
+			217		Piedmont Triad Intll          	0.0724
+			218		Mc Carran Intl                	0.2152
+			219		Drake Field                   	0.1411
+			220		Raleigh-Durham Intll          	0.0719
+			221		Mc Ghee Tyson                 	0.0987
+			222		Asheville Regional            	0.0906
+			223		Meadows Field                 	0.2182
+			224		Will Rogers World             	0.1559
+			225		Fort Smith Regional           	0.1469
+			226		Kinston Regional Jetport At St	0.0992
+			227		San Luis Obispo County-Mc Ches	0.219
+			228		Amarillo Intl                 	0.1909
+			229		Charlotte/Douglas Intl        	0.0822
+			230		Flagstaff Pulliam             	0.2432
+			231		Memphis Intl                  	0.117
+			232		Albuquerque Intl              	0.1975
+			233		Lovell Field                  	0.1039
+			234		Fayetteville Regional/Grannis 	0.0842
+			235		Santa Maria Pub/Capt G Allan H	0.2223
+			236		Greenville-Spartanburg        	0.0893
+			237		Albert J Ellis                	0.0996
+			238		Adams Field                   	0.1285
+			239		Huntsville Intl-Carl T Jones F	0.1059
+			240		Lawton Muni                   	0.1759
+			241		Santa Barbara Muni            	0.2277
+			242		New Hanover Intll             	0.0878
+			243		Oxnard                        	0.2361
+			244		Burbank-Glendale-Pasadena     	0.2289
+			245		Ontario Intl                  	0.2309
+			246		Sheppard Afb/Wichita Falls Mun	0.1712
+			247		Los Angeles Intl              	0.2313
+			248		Columbia Metropolitan         	0.0938
+			249		Palm Springs Regional         	0.2368
+			250		Long Beach /Daugherty Field/  	0.2361
+			251		Myrtle Beach Intl             	0.0929
+			252		John Wayne Airport-Orange Coun	0.2342
+			253		Lubbock Intl                  	0.1839
+			254		The William B Hartsfield Atlan	0.1045
+			255		Birmingham Intl               	0.1157
+			256		Texarkana Regional-Webb Field 	0.1748
+			257		Phoenix Sky Harbor Intl       	0.2268
+			258		Bush Field                    	0.1006
+			259		Charleston Afb/Intl           	0.101
+			260		Dallas/Fort Worth Intl        	0.1584
+			261		Dallas Love Field             	0.1582
+			262		San Diego Intl-Lindbergh Fld  	0.2437
+			263		Yuma Mcas/Yuma Intl           	0.2419
+			264		Columbus Metropolitan         	0.1156
+			265		Monroe Regional               	0.1448
+			266		Shreveport Regional           	0.1534
+			267		Abilene Regional              	0.1727
+			268		Gregg County                  	0.1711
+			269		Tyler Pounds Field            	0.1681
+			270		Jackson Intll                 	0.136
+			271		Dannelly Field                	0.1208
+			272		Savannah Intll                	0.1098
+			273		Tucson Intl                   	0.2296
+			274		Midland Intll                 	0.1862
+			275		El Paso Intl                  	0.2071
+			276		Waco Regional                 	0.1706
+			277		Alexandria Esler Regional     	0.1864
+			278		Mathis Field                  	0.1813
+			279		Killeen Muni                  	0.176
+			280		Mobile Regional               	0.1387
+			281		Easterwood Field              	0.1807
+			282		Baton Rouge Metropolitan, Ryan	0.1498
+			283		Jacksonville Intl             	0.1253
+			284		Eglin Afb                     	0.164
+			285		Pensacola Regional            	0.1375
+			286		Tallahassee Regional          	0.1313
+			287		Robert Mueller Muni           	0.177
+			288		Panama City-Bay Co Intl       	0.1379
+			289		Lafayette Regional            	0.1852
+			290		Lake Charles Regional         	0.1912
+			291		New Orleans Intl/Moisant Fld/ 	0.1503
+			292		Houston Intercontinental      	0.168
+			293		Jefferson County              	0.1904
+			294		Gainesville Regional          	0.1354
+			295		William P Hobby               	0.1712
+			296		San Antonio Intl              	0.1843
+			297		Daytona Beach Intl            	0.1369
+			298		Orlando Intl                  	0.1439
+			299		Melbourne Intll               	0.1468
+			300		Tampa Intl                    	0.1497
+			301		St Petersburg/Clearwater Intl 	0.1868
+			302		Corpus Christi Intl           	0.1918
+			303		Laredo Intl                   	0.211
+			304		Sarasota/Bradenton Intl       	0.155
+			305		Palm Beach Intl               	0.1592
+			306		Southwest Florida Intl        	0.162
+			307		Rio Grande Valley Intl        	0.2058
+			308		Mc Allen Miller Intl          	0.2073
+			309		Fort Lauderdale/Hollywood Intl	0.165
+			310		Miami Intl                    	0.1677
+			311		Lihue                         	0.419
+			312		Honolulu Intl                 	0.4094
+			313		Molokai                       	0.4124
+			314		Kapalua                       	0.4095
+			315		Kahului                       	0.4082
+			316		Lanai                         	0.411
+			317		Keahole-Kona Intll            	0.4195
+			318		Hilo Intll                    	0.4215
+			319		Rafael Hernandez              	0.2544
+			320		Luis Munoz Marin Intl         	0.244
+			321		Cyril E King                  	0.2494
+			322		Eugenio Maria De Hostos       	0.2501
+			323		Mercedita                     	0.249
+			324		Alexander Hamilton            	0.2534
+			325		Johnston Atoll                	0.483
+			326		Saipan Intl                   	0.7268
+			327		Rota Intl                     	0.7175
+			328		Guam Intll                    	0.7105
+			329		Babelthuap/Koror              	0.7889
+			330		Pago Pago Intl                	0.7562
+			331		West Tinian		0.7281
+		Pi:
+			0		Wiley Post-Will Rogers Mem    	7
+			1		Deadhorse                     	7
+			2		Ralph Wien Memorial           	7
+			3		Fairbanks Intl                	7
+			4		Nome                          	7
+			5		St Mary's                     	12
+			6		Aniak                         	12
+			7		Anchorage Intl                	15
+			8		Tuluksak                      	10
+			9		Akiachak                      	10
+			10		Akiak                         	None
+			11		Kwethluk                      	9
+			12		Bethel                        	10
+			13		Napaskiak                     	12
+			14		Napakiak                      	12
+			15		Merle K (Mudhole) Smith       	21
+			16		Tuntutuliak                   	19
+			17		Eek                           	12
+			18		Kongiganak                    	19
+			19		Kwigillingok                  	None
+			20		Quinhagak                     	12
+			21		Yakutat                       	None
+			22		Dillingham                    	7
+			23		King Salmon                   	7
+			24		Gustavus                      	25
+			25		Juneau Intl                   	30
+			26		Kodiak                        	7
+			27		St Paul Island                	7
+			28		Sitka                         	30
+			29		Port Heiden                   	7
+			30		James A Johnson Petersburg    	31
+			31		Wrangell                      	None
+			32		Ketchikan Intl                	31
+			33		Sand Point                    	7
+			34		Cold Bay                      	7
+			35		Unalaska                      	7
+			36		Eareckson As                  	7
+			37		Adak Naf                      	7
+			38		Bellingham Intl               	46
+			39		Glacier Park Intl             	44
+			40		Minot Intl                    	66
+			41		William R Fairchild Intl      	46
+			42		Grand Forks Afb               	66
+			43		Grand Forks Intl              	66
+			44		Spokane Intl                  	46
+			45		Great Falls Intl              	44
+			46		Seattle-Tacoma Intl           	32
+			47		Pangborn Memorial             	46
+			48		Grant County                  	46
+			49		Missoula Intll                	44
+			50		Hector Intll                  	66
+			51		Duluth Intl                   	66
+			52		Bismarck Muni                 	66
+			53		Pullman/Moscow Regional       	46
+			54		Helena Regional               	49
+			55		Yakima Air Terminal           	46
+			56		Marquette County              	69
+			57		Lewiston-Nez Perce County     	46
+			58		Tri-Cities                    	46
+			59		Walla Walla Regional          	46
+			60		Bert Mooney                   	44
+			61		Billings Logan Intl           	49
+			62		Gallatin Field                	44
+			63		Eastern Oregon Regional At Pen	58
+			64		Portland Intl                 	46
+			65		Mcnary Fld                    	64
+			66		Minneapolis-St Paul Intl/Wold-	173
+			67		Bangor Intl                   	95
+			68		Central Wisconsin             	70
+			69		Cherry Capital                	111
+			70		Austin Straubel Intll         	111
+			71		Burlington Intl               	161
+			72		Outagamie County              	70
+			73		Roberts Field                 	46
+			74		Mahlon Sweet Field            	46
+			75		Rapid City Regional           	117
+			76		Wittman Regional              	93
+			77		Rochester Intll               	117
+			78		La Crosse Muni                	117
+			79		Portland Intl Jetport         	146
+			80		Jackson Hole                  	84
+			81		Joe Foss Field                	117
+			82		Boise Air Terminal /Gowen Fld/	46
+			83		Mbs Intll                     	111
+			84		Fanning Field                 	82
+			85		Friedman Memorial             	46
+			86		North Bend Muni               	64
+			87		Muskegon County               	117
+			88		Oneida County                 	None
+			89		Dane County Regional-Truax Fie	151
+			90		Greater Rochester Intl        	173
+			91		Syracuse Hancock Intl         	173
+			92		Bishop Intll                  	151
+			93		General Mitchell Intll        	151
+			94		Greater Buffalo Intl          	173
+			95		Manchester                    	146
+			96		Pocatello Regional            	82
+			97		Natrona County Intl           	75
+			98		Kent County Intl              	151
+			99		Capital City                  	111
+			100		Albany County                 	173
+			101		Waterloo Muni                 	117
+			102		Tompkins County               	151
+			103		Twin Falls-Sun Valley Regional	82
+			104		Detroit City                  	166
+			105		Sioux Gateway                 	117
+			106		Dubuque Regional              	117
+			107		Rogue Valley Intl- M          	64
+			108		General Edward Lawrence Logan 	173
+			109		Worcester Muni                	161
+			110		Kalamazoo/Battle Creek Interna	151
+			111		Detroit Metropolitan Wayne Cou	173
+			112		Binghamton Regional/Edwin A Li	173
+			113		Greater Rockford              	117
+			114		Elmira/Corning Regional       	151
+			115		Klamath Falls Intll           	64
+			116		Erie Intl                     	151
+			117		Chicago O'hare Intl           	173
+			118		Bradley Intl                  	173
+			119		Cedar Rapids Muni             	117
+			120		William B. Heilig Field       	141
+			121		Merrill C Meigs               	162
+			122		Chicago Midway                	151
+			123		Jack Mc Namara Field          	137
+			124		Theodore Francis Green State  	173
+			125		Michiana Rgnl Transportation C	151
+			126		Toledo Express                	151
+			127		Des Moines Intl               	151
+			128		Stewart Int'l                 	100
+			129		Quad-City                     	117
+			130		Cleveland-Hopkins Intl        	173
+			131		Wilkes-Barre/Scranton Intl    	173
+			132		Eppley Airfield               	151
+			133		Tweed-New Haven               	135
+			134		Youngstown-Warren Regional    	138
+			135		Westchester County            	151
+			136		Fort Wayne Intll              	151
+			137		Arcata                        	182
+			138		Akron-Canton Regional         	176
+			139		Lincoln Muni                  	181
+			140		University Park               	176
+			141		Elko Muni-J.C. Harris Field   	46
+			142		Long Island Mac Arthur        	173
+			143		Salt Lake City Intl           	46
+			144		Burlington Regional           	147
+			145		La Guardia                    	173
+			146		Newark Intl                   	173
+			147		Greater Peoria Regional       	157
+			148		Lehigh Valley Intll           	156
+			149		John F Kennedy Intl           	173
+			150		Redding Muni                  	64
+			151		Pittsburgh Intll              	173
+			152		Yampa Valley                  	165
+			153		Bloomington/Normal            	117
+			154		Purdue University             	170
+			155		Mercer County                 	151
+			156		Harrisburg Intll              	176
+			157		University Of Illinois-Willard	160
+			158		Port Columbus Intl            	173
+			159		Quincy Muni Baldwin Field     	181
+			160		James M Cox Dayton Intl       	173
+			161		Philadelphia Intl             	173
+			162		Capital                       	181
+			163		Decatur                       	181
+			164		Chico Muni                    	200
+			165		Stapleton Intl                	173
+			166		Indianapolis Intl             	173
+			167		Eagle County Regional         	165
+			168		Reno/Tahoe Intll              	46
+			169		Atlantic City Intll           	142
+			170		Hulman Regional               	157
+			171		Kansas City Intl              	173
+			172		Aspen-Pitkin Co/Sardy Field   	165
+			173		Baltimore-Washington Intl     	88
+			174		Walker Field                  	165
+			175		Cincinnati/Northern Kentucky I	173
+			176		Washington Dulles Intl        	173
+			177		Lake Tahoe                    	200
+			178		Washington National           	176
+			179		Columbia Regional             	181
+			180		City Of Colorado Springs Muni 	181
+			181		Lambert-St Louis Intl         	173
+			182		Sacramento Metropolitan       	46
+			183		Gunnison County               	165
+			184		Sonoma County                 	200
+			185		Yeager                        	151
+			186		Tri-State/Milton J.Ferguson Fi	151
+			187		Pueblo Memorial               	180
+			188		Louisville Intl               	175
+			189		Charlottesville-Albemarle     	176
+			190		Evansville Regional           	160
+			191		Blue Grass                    	203
+			192		Stockton Metropolitan         	200
+			193		Greenbrier Valley             	220
+			194		Williamson County Regional    	181
+			195		Forney Aaf                    	181
+			196		Metropolitan Oakland Intl     	46
+			197		Wichita Mid-Continent         	181
+			198		Modesto City-County--Harry Sha	200
+			199		Mammoth Lakes                 	212
+			200		San Francisco Intl            	46
+			201		Richmond Intll                	173
+			202		San Jose Intll                	46
+			203		Roanoke Regional/Woodrum Field	173
+			204		Merced Municipal/Macready Fiel	200
+			205		Springfield Regional          	181
+			206		Cape Girardeau Regional       	181
+			207		Durango-La Plata County       	257
+			208		Joplin Regional               	181
+			209		Newport News/Williamsburg Inte	151
+			210		Barkley Regional              	181
+			211		Norfolk Intl                  	173
+			212		Fresno Air Terminal           	168
+			213		Monterey Peninsula            	200
+			214		Tri-Cities Regional Tn/Va     	229
+			215		Tulsa Intl                    	181
+			216		Nashville Intll               	173
+			217		Piedmont Triad Intll          	173
+			218		Mc Carran Intl                	46
+			219		Drake Field                   	181
+			220		Raleigh-Durham Intll          	173
+			221		Mc Ghee Tyson                 	229
+			222		Asheville Regional            	229
+			223		Meadows Field                 	182
+			224		Will Rogers World             	231
+			225		Fort Smith Regional           	181
+			226		Kinston Regional Jetport At St	229
+			227		San Luis Obispo County-Mc Ches	200
+			228		Amarillo Intl                 	260
+			229		Charlotte/Douglas Intl        	173
+			230		Flagstaff Pulliam             	257
+			231		Memphis Intl                  	216
+			232		Albuquerque Intl              	175
+			233		Lovell Field                  	229
+			234		Fayetteville Regional/Grannis 	217
+			235		Santa Maria Pub/Capt G Allan H	227
+			236		Greenville-Spartanburg        	229
+			237		Albert J Ellis                	229
+			238		Adams Field                   	216
+			239		Huntsville Intl-Carl T Jones F	176
+			240		Lawton Muni                   	260
+			241		Santa Barbara Muni            	200
+			242		New Hanover Intll             	220
+			243		Oxnard                        	247
+			244		Burbank-Glendale-Pasadena     	46
+			245		Ontario Intl                  	46
+			246		Sheppard Afb/Wichita Falls Mun	260
+			247		Los Angeles Intl              	46
+			248		Columbia Metropolitan         	220
+			249		Palm Springs Regional         	245
+			250		Long Beach /Daugherty Field/  	202
+			251		Myrtle Beach Intl             	220
+			252		John Wayne Airport-Orange Coun	46
+			253		Lubbock Intl                  	260
+			254		The William B Hartsfield Atlan	173
+			255		Birmingham Intl               	229
+			256		Texarkana Regional-Webb Field 	260
+			257		Phoenix Sky Harbor Intl       	173
+			258		Bush Field                    	229
+			259		Charleston Afb/Intl           	220
+			260		Dallas/Fort Worth Intl        	176
+			261		Dallas Love Field             	238
+			262		San Diego Intl-Lindbergh Fld  	46
+			263		Yuma Mcas/Yuma Intl           	257
+			264		Columbus Metropolitan         	254
+			265		Monroe Regional               	254
+			266		Shreveport Regional           	255
+			267		Abilene Regional              	260
+			268		Gregg County                  	260
+			269		Tyler Pounds Field            	260
+			270		Jackson Intll                 	254
+			271		Dannelly Field                	254
+			272		Savannah Intll                	173
+			273		Tucson Intl                   	260
+			274		Midland Intll                 	260
+			275		El Paso Intl                  	260
+			276		Waco Regional                 	260
+			277		Alexandria Esler Regional     	260
+			278		Mathis Field                  	260
+			279		Killeen Muni                  	260
+			280		Mobile Regional               	254
+			281		Easterwood Field              	260
+			282		Baton Rouge Metropolitan, Ryan	254
+			283		Jacksonville Intl             	173
+			284		Eglin Afb                     	231
+			285		Pensacola Regional            	229
+			286		Tallahassee Regional          	229
+			287		Robert Mueller Muni           	231
+			288		Panama City-Bay Co Intl       	254
+			289		Lafayette Regional            	292
+			290		Lake Charles Regional         	260
+			291		New Orleans Intl/Moisant Fld/ 	173
+			292		Houston Intercontinental      	173
+			293		Jefferson County              	260
+			294		Gainesville Regional          	229
+			295		William P Hobby               	292
+			296		San Antonio Intl              	216
+			297		Daytona Beach Intl            	220
+			298		Orlando Intl                  	173
+			299		Melbourne Intll               	220
+			300		Tampa Intl                    	173
+			301		St Petersburg/Clearwater Intl 	309
+			302		Corpus Christi Intl           	292
+			303		Laredo Intl                   	260
+			304		Sarasota/Bradenton Intl       	173
+			305		Palm Beach Intl               	173
+			306		Southwest Florida Intl        	173
+			307		Rio Grande Valley Intl        	292
+			308		Mc Allen Miller Intl          	292
+			309		Fort Lauderdale/Hollywood Intl	173
+			310		Miami Intl                    	173
+			311		Lihue                         	312
+			312		Honolulu Intl                 	46
+			313		Molokai                       	315
+			314		Kapalua                       	315
+			315		Kahului                       	46
+			316		Lanai                         	315
+			317		Keahole-Kona Intll            	315
+			318		Hilo Intll                    	315
+			319		Rafael Hernandez              	323
+			320		Luis Munoz Marin Intl         	173
+			321		Cyril E King                  	320
+			322		Eugenio Maria De Hostos       	320
+			323		Mercedita                     	320
+			324		Alexander Hamilton            	320
+			325		Johnston Atoll                	312
+			326		Saipan Intl                   	328
+			327		Rota Intl                     	328
+			328		Guam Intll                    	312
+			329		Babelthuap/Koror              	328
+			330		Pago Pago Intl                	312
+			331		West Tinian		326
+
+	b) Sementes utilizadas: [190, 151, 216, 108, 181]
+		Lambda:
+			0		Wiley Post-Will Rogers Mem    	0.4702
+			1		Deadhorse                     	0.445
+			2		Ralph Wien Memorial           	0.4595
+			3		Fairbanks Intl                	0.3935
+			4		Nome                          	0.4601
+			5		St Mary's                     	0.4435
+			6		Aniak                         	0.424
+			7		Anchorage Intl                	0.3752
+			8		Tuluksak                      	0.4409
+			9		Akiachak                      	0.4379
+			10		Akiak                         	0.4389
+			11		Kwethluk                      	0.4376
+			12		Bethel                        	0.4356
+			13		Napaskiak                     	0.4365
+			14		Napakiak                      	0.4367
+			15		Merle K (Mudhole) Smith       	0.3634
+			16		Tuntutuliak                   	0.4416
+			17		Eek                           	0.4411
+			18		Kongiganak                    	0.4451
+			19		Kwigillingok                  	0.4468
+			20		Quinhagak                     	0.4454
+			21		Yakutat                       	0.3323
+			22		Dillingham                    	0.423
+			23		King Salmon                   	0.4166
+			24		Gustavus                      	0.3099
+			25		Juneau Intl                   	0.3042
+			26		Kodiak                        	0.4103
+			27		St Paul Island                	0.4851
+			28		Sitka                         	0.296
+			29		Port Heiden                   	0.4348
+			30		James A Johnson Petersburg    	0.2877
+			31		Wrangell                      	0.2834
+			32		Ketchikan Intl                	0.2721
+			33		Sand Point                    	0.4526
+			34		Cold Bay                      	0.4615
+			35		Unalaska                      	0.4845
+			36		Eareckson As                  	0.5751
+			37		Adak Naf                      	0.5374
+			38		Bellingham Intl               	0.1956
+			39		Glacier Park Intl             	0.1691
+			40		Minot Intl                    	0.1076
+			41		William R Fairchild Intl      	0.1915
+			42		Grand Forks Afb               	0.0968
+			43		Grand Forks Intl              	0.096
+			44		Spokane Intl                  	0.1734
+			45		Great Falls Intl              	0.1562
+			46		Seattle-Tacoma Intl           	0.1826
+			47		Pangborn Memorial             	0.1933
+			48		Grant County                  	0.1886
+			49		Missoula Intll                	0.1574
+			50		Hector Intll                  	0.0871
+			51		Duluth Intl                   	0.0798
+			52		Bismarck Muni                 	0.0931
+			53		Pullman/Moscow Regional       	0.1734
+			54		Helena Regional               	0.1491
+			55		Yakima Air Terminal           	0.1802
+			56		Marquette County              	0.0695
+			57		Lewiston-Nez Perce County     	0.1698
+			58		Tri-Cities                    	0.1724
+			59		Walla Walla Regional          	0.1767
+			60		Bert Mooney                   	0.1472
+			61		Billings Logan Intl           	0.1351
+			62		Gallatin Field                	0.1402
+			63		Eastern Oregon Regional At Pen	0.1781
+			64		Portland Intl                 	0.1805
+			65		Mcnary Fld                    	0.1873
+			66		Minneapolis-St Paul Intl/Wold-	0.0604
+			67		Bangor Intl                   	0.0259
+			68		Central Wisconsin             	0.0614
+			69		Cherry Capital                	0.0496
+			70		Austin Straubel Intll         	0.0555
+			71		Burlington Intl               	0.0523
+			72		Outagamie County              	0.0537
+			73		Roberts Field                 	0.1873
+			74		Mahlon Sweet Field            	0.1767
+			75		Rapid City Regional           	0.0889
+			76		Wittman Regional              	0.0524
+			77		Rochester Intll               	0.063
+			78		La Crosse Muni                	0.0582
+			79		Portland Intl Jetport         	0.0128
+			80		Jackson Hole                  	0.1218
+			81		Joe Foss Field                	0.0564
+			82		Boise Air Terminal /Gowen Fld/	0.1427
+			83		Mbs Intll                     	0.036
+			84		Fanning Field                 	0.1287
+			85		Friedman Memorial             	0.1404
+			86		North Bend Muni               	0.1852
+			87		Muskegon County               	0.0474
+			88		Oneida County                 	0.0607
+			89		Dane County Regional-Truax Fie	0.0422
+			90		Greater Rochester Intl        	0.0283
+			91		Syracuse Hancock Intl         	0.027
+			92		Bishop Intll                  	0.0297
+			93		General Mitchell Intll        	0.042
+			94		Greater Buffalo Intl          	0.0246
+			95		Manchester                    	0.0482
+			96		Pocatello Regional            	0.1351
+			97		Natrona County Intl           	0.1093
+			98		Kent County Intl              	0.0354
+			99		Capital City                  	0.0312
+			100		Albany County                 	0.0326
+			101		Waterloo Muni                 	0.0378
+			102		Tompkins County               	0.0271
+			103		Twin Falls-Sun Valley Regional	0.1324
+			104		Detroit City                  	0.0478
+			105		Sioux Gateway                 	0.0465
+			106		Dubuque Regional              	0.0465
+			107		Rogue Valley Intl- M          	0.1935
+			108		General Edward Lawrence Logan 	0
+			109		Worcester Muni                	0.0458
+			110		Kalamazoo/Battle Creek Interna	0.0318
+			111		Detroit Metropolitan Wayne Cou	0.0229
+			112		Binghamton Regional/Edwin A Li	0.0271
+			113		Greater Rockford              	0.0397
+			114		Elmira/Corning Regional       	0.0233
+			115		Klamath Falls Intll           	0.1969
+			116		Erie Intl                     	0.0152
+			117		Chicago O'hare Intl           	0.0332
+			118		Bradley Intl                  	0.0095
+			119		Cedar Rapids Muni             	0.0307
+			120		William B. Heilig Field       	0.1939
+			121		Merrill C Meigs               	0.033
+			122		Chicago Midway                	0.0319
+			123		Jack Mc Namara Field          	0.1932
+			124		Theodore Francis Green State  	0.0398
+			125		Michiana Rgnl Transportation C	0.0331
+			126		Toledo Express                	0.021
+			127		Des Moines Intl               	0.0315
+			128		Stewart Int'l                 	0.0327
+			129		Quad-City                     	0.0258
+			130		Cleveland-Hopkins Intl        	0.0121
+			131		Wilkes-Barre/Scranton Intl    	0.0243
+			132		Eppley Airfield               	0.0373
+			133		Tweed-New Haven               	0.0383
+			134		Youngstown-Warren Regional    	0.0432
+			135		Westchester County            	0.0337
+			136		Fort Wayne Intll              	0.0257
+			137		Arcata                        	0.1856
+			138		Akron-Canton Regional         	0.0382
+			139		Lincoln Muni                  	0.0382
+			140		University Park               	0.0261
+			141		Elko Muni-J.C. Harris Field   	0.131
+			142		Long Island Mac Arthur        	0.0282
+			143		Salt Lake City Intl           	0.1118
+			144		Burlington Regional           	0.0198
+			145		La Guardia                    	0.0211
+			146		Newark Intl                   	0.0227
+			147		Greater Peoria Regional       	0.0186
+			148		Lehigh Valley Intll           	0.0244
+			149		John F Kennedy Intl           	0.0218
+			150		Redding Muni                  	0.191
+			151		Pittsburgh Intll              	0
+			152		Yampa Valley                  	0.0883
+			153		Bloomington/Normal            	0.018
+			154		Purdue University             	0.033
+			155		Mercer County                 	0.0277
+			156		Harrisburg Intll              	0.0178
+			157		University Of Illinois-Willard	0.0162
+			158		Port Columbus Intl            	0.0144
+			159		Quincy Muni Baldwin Field     	0.0122
+			160		James M Cox Dayton Intl       	0.0211
+			161		Philadelphia Intl             	0.0261
+			162		Capital                       	0.011
+			163		Decatur                       	0.0128
+			164		Chico Muni                    	0.1844
+			165		Stapleton Intl                	0.0746
+			166		Indianapolis Intl             	0.0172
+			167		Eagle County Regional         	0.085
+			168		Reno/Tahoe Intll              	0.1504
+			169		Atlantic City Intll           	0.0305
+			170		Hulman Regional               	0.0236
+			171		Kansas City Intl              	0.0228
+			172		Aspen-Pitkin Co/Sardy Field   	0.086
+			173		Baltimore-Washington Intl     	0.0221
+			174		Walker Field                  	0.0941
+			175		Cincinnati/Northern Kentucky I	0.0265
+			176		Washington Dulles Intl        	0.0204
+			177		Lake Tahoe                    	0.1805
+			178		Washington National           	0.0225
+			179		Columbia Regional             	0.0095
+			180		City Of Colorado Springs Muni 	0.073
+			181		Lambert-St Louis Intl         	0
+			182		Sacramento Metropolitan       	0.1603
+			183		Gunnison County               	0.0904
+			184		Sonoma County                 	0.1722
+			185		Yeager                        	0.0214
+			186		Tri-State/Milton J.Ferguson Fi	0.0235
+			187		Pueblo Memorial               	0.078
+			188		Louisville Intl               	0.0202
+			189		Charlottesville-Albemarle     	0.0296
+			190		Evansville Regional           	0
+			191		Blue Grass                    	0.0211
+			192		Stockton Metropolitan         	0.1697
+			193		Greenbrier Valley             	0.061
+			194		Williamson County Regional    	0.0118
+			195		Forney Aaf                    	0.0133
+			196		Metropolitan Oakland Intl     	0.1645
+			197		Wichita Mid-Continent         	0.0375
+			198		Modesto City-County--Harry Sha	0.1657
+			199		Mammoth Lakes                 	0.1647
+			200		San Francisco Intl            	0.1634
+			201		Richmond Intll                	0.0321
+			202		San Jose Intll                	0.1613
+			203		Roanoke Regional/Woodrum Field	0.0404
+			204		Merced Municipal/Macready Fiel	0.1618
+			205		Springfield Regional          	0.0211
+			206		Cape Girardeau Regional       	0.0151
+			207		Durango-La Plata County       	0.163
+			208		Joplin Regional               	0.0261
+			209		Newport News/Williamsburg Inte	0.0373
+			210		Barkley Regional              	0.0181
+			211		Norfolk Intl                  	0.04
+			212		Fresno Air Terminal           	0.1554
+			213		Monterey Peninsula            	0.1737
+			214		Tri-Cities Regional Tn/Va     	0.04
+			215		Tulsa Intl                    	0.0373
+			216		Nashville Intll               	0
+			217		Piedmont Triad Intll          	0.0344
+			218		Mc Carran Intl                	0.1288
+			219		Drake Field                   	0.0327
+			220		Raleigh-Durham Intll          	0.0403
+			221		Mc Ghee Tyson                 	0.014
+			222		Asheville Regional            	0.0389
+			223		Meadows Field                 	0.1681
+			224		Will Rogers World             	0.0489
+			225		Fort Smith Regional           	0.0385
+			226		Kinston Regional Jetport At St	0.0475
+			227		San Luis Obispo County-Mc Ches	0.1878
+			228		Amarillo Intl                 	0.0936
+			229		Charlotte/Douglas Intl        	0.0305
+			230		Flagstaff Pulliam             	0.1378
+			231		Memphis Intl                  	0.0197
+			232		Albuquerque Intl              	0.0901
+			233		Lovell Field                  	0.0402
+			234		Fayetteville Regional/Grannis 	0.0413
+			235		Santa Maria Pub/Capt G Allan H	0.1911
+			236		Greenville-Spartanburg        	0.0376
+			237		Albert J Ellis                	0.0479
+			238		Adams Field                   	0.0312
+			239		Huntsville Intl-Carl T Jones F	0.0142
+			240		Lawton Muni                   	0.0786
+			241		Santa Barbara Muni            	0.1577
+			242		New Hanover Intll             	0.0484
+			243		Oxnard                        	0.1548
+			244		Burbank-Glendale-Pasadena     	0.1499
+			245		Ontario Intl                  	0.1458
+			246		Sheppard Afb/Wichita Falls Mun	0.0739
+			247		Los Angeles Intl              	0.15
+			248		Columbia Metropolitan         	0.0427
+			249		Palm Springs Regional         	0.1413
+			250		Long Beach /Daugherty Field/  	0.1528
+			251		Myrtle Beach Intl             	0.0484
+			252		John Wayne Airport-Orange Coun	0.1483
+			253		Lubbock Intl                  	0.0866
+			254		The William B Hartsfield Atlan	0.0263
+			255		Birmingham Intl               	0.0245
+			256		Texarkana Regional-Webb Field 	0.0775
+			257		Phoenix Sky Harbor Intl       	0.1214
+			258		Bush Field                    	0.0391
+			259		Charleston Afb/Intl           	0.0497
+			260		Dallas/Fort Worth Intl        	0.0611
+			261		Dallas Love Field             	0.0609
+			262		San Diego Intl-Lindbergh Fld  	0.1482
+			263		Yuma Mcas/Yuma Intl           	0.1365
+			264		Columbus Metropolitan         	0.0374
+			265		Monroe Regional               	0.0506
+			266		Shreveport Regional           	0.0595
+			267		Abilene Regional              	0.0754
+			268		Gregg County                  	0.0738
+			269		Tyler Pounds Field            	0.0708
+			270		Jackson Intll                 	0.0404
+			271		Dannelly Field                	0.0367
+			272		Savannah Intll                	0.0482
+			273		Tucson Intl                   	0.1225
+			274		Midland Intll                 	0.0889
+			275		El Paso Intl                  	0.1098
+			276		Waco Regional                 	0.0733
+			277		Alexandria Esler Regional     	0.0891
+			278		Mathis Field                  	0.084
+			279		Killeen Muni                  	0.0787
+			280		Mobile Regional               	0.0525
+			281		Easterwood Field              	0.0834
+			282		Baton Rouge Metropolitan, Ryan	0.058
+			283		Jacksonville Intl             	0.0595
+			284		Eglin Afb                     	0.0667
+			285		Pensacola Regional            	0.0541
+			286		Tallahassee Regional          	0.0573
+			287		Robert Mueller Muni           	0.0797
+			288		Panama City-Bay Co Intl       	0.0597
+			289		Lafayette Regional            	0.0906
+			290		Lake Charles Regional         	0.0939
+			291		New Orleans Intl/Moisant Fld/ 	0.0614
+			292		Houston Intercontinental      	0.0734
+			293		Jefferson County              	0.0931
+			294		Gainesville Regional          	0.0657
+			295		William P Hobby               	0.0758
+			296		San Antonio Intl              	0.087
+			297		Daytona Beach Intl            	0.0723
+			298		Orlando Intl                  	0.0784
+			299		Melbourne Intll               	0.0827
+			300		Tampa Intl                    	0.0807
+			301		St Petersburg/Clearwater Intl 	0.1235
+			302		Corpus Christi Intl           	0.097
+			303		Laredo Intl                   	0.1137
+			304		Sarasota/Bradenton Intl       	0.0862
+			305		Palm Beach Intl               	0.0962
+			306		Southwest Florida Intl        	0.0949
+			307		Rio Grande Valley Intl        	0.1107
+			308		Mc Allen Miller Intl          	0.1127
+			309		Fort Lauderdale/Hollywood Intl	0.1017
+			310		Miami Intl                    	0.1039
+			311		Lihue                         	0.3919
+			312		Honolulu Intl                 	0.3823
+			313		Molokai                       	0.3845
+			314		Kapalua                       	0.3816
+			315		Kahului                       	0.3803
+			316		Lanai                         	0.3831
+			317		Keahole-Kona Intll            	0.3849
+			318		Hilo Intll                    	0.39
+			319		Rafael Hernandez              	0.2007
+			320		Luis Munoz Marin Intl         	0.1991
+			321		Cyril E King                  	0.203
+			322		Eugenio Maria De Hostos       	0.2052
+			323		Mercedita                     	0.2041
+			324		Alexander Hamilton            	0.2085
+			325		Johnston Atoll                	0.4559
+			326		Saipan Intl                   	0.6997
+			327		Rota Intl                     	0.6904
+			328		Guam Intll                    	0.6834
+			329		Babelthuap/Koror              	0.7618
+			330		Pago Pago Intl                	0.6826
+			331		West Tinian		0.701
+		Pi:
+			0		Wiley Post-Will Rogers Mem    	3
+			1		Deadhorse                     	3
+			2		Ralph Wien Memorial           	7
+			3		Fairbanks Intl                	46
+			4		Nome                          	7
+			5		St Mary's                     	7
+			6		Aniak                         	7
+			7		Anchorage Intl                	46
+			8		Tuluksak                      	12
+			9		Akiachak                      	12
+			10		Akiak                         	12
+			11		Kwethluk                      	12
+			12		Bethel                        	7
+			13		Napaskiak                     	12
+			14		Napakiak                      	12
+			15		Merle K (Mudhole) Smith       	21
+			16		Tuntutuliak                   	12
+			17		Eek                           	12
+			18		Kongiganak                    	12
+			19		Kwigillingok                  	12
+			20		Quinhagak                     	12
+			21		Yakutat                       	25
+			22		Dillingham                    	7
+			23		King Salmon                   	7
+			24		Gustavus                      	25
+			25		Juneau Intl                   	46
+			26		Kodiak                        	7
+			27		St Paul Island                	7
+			28		Sitka                         	46
+			29		Port Heiden                   	7
+			30		James A Johnson Petersburg    	31
+			31		Wrangell                      	32
+			32		Ketchikan Intl                	46
+			33		Sand Point                    	7
+			34		Cold Bay                      	7
+			35		Unalaska                      	7
+			36		Eareckson As                  	7
+			37		Adak Naf                      	7
+			38		Bellingham Intl               	46
+			39		Glacier Park Intl             	54
+			40		Minot Intl                    	52
+			41		William R Fairchild Intl      	46
+			42		Grand Forks Afb               	66
+			43		Grand Forks Intl              	66
+			44		Spokane Intl                  	165
+			45		Great Falls Intl              	66
+			46		Seattle-Tacoma Intl           	181
+			47		Pangborn Memorial             	46
+			48		Grant County                  	59
+			49		Missoula Intll                	165
+			50		Hector Intll                  	66
+			51		Duluth Intl                   	66
+			52		Bismarck Muni                 	81
+			53		Pullman/Moscow Regional       	82
+			54		Helena Regional               	62
+			55		Yakima Air Terminal           	58
+			56		Marquette County              	69
+			57		Lewiston-Nez Perce County     	82
+			58		Tri-Cities                    	82
+			59		Walla Walla Regional          	57
+			60		Bert Mooney                   	62
+			61		Billings Logan Intl           	165
+			62		Gallatin Field                	165
+			63		Eastern Oregon Regional At Pen	58
+			64		Portland Intl                 	165
+			65		Mcnary Fld                    	64
+			66		Minneapolis-St Paul Intl/Wold-	181
+			67		Bangor Intl                   	108
+			68		Central Wisconsin             	72
+			69		Cherry Capital                	111
+			70		Austin Straubel Intll         	111
+			71		Burlington Intl               	151
+			72		Outagamie County              	89
+			73		Roberts Field                 	74
+			74		Mahlon Sweet Field            	165
+			75		Rapid City Regional           	81
+			76		Wittman Regional              	93
+			77		Rochester Intll               	117
+			78		La Crosse Muni                	117
+			79		Portland Intl Jetport         	108
+			80		Jackson Hole                  	165
+			81		Joe Foss Field                	181
+			82		Boise Air Terminal /Gowen Fld/	165
+			83		Mbs Intll                     	111
+			84		Fanning Field                 	80
+			85		Friedman Memorial             	143
+			86		North Bend Muni               	74
+			87		Muskegon County               	117
+			88		Oneida County                 	173
+			89		Dane County Regional-Truax Fie	181
+			90		Greater Rochester Intl        	151
+			91		Syracuse Hancock Intl         	108
+			92		Bishop Intll                  	151
+			93		General Mitchell Intll        	181
+			94		Greater Buffalo Intl          	151
+			95		Manchester                    	146
+			96		Pocatello Regional            	84
+			97		Natrona County Intl           	75
+			98		Kent County Intl              	151
+			99		Capital City                  	151
+			100		Albany County                 	79
+			101		Waterloo Muni                 	181
+			102		Tompkins County               	151
+			103		Twin Falls-Sun Valley Regional	143
+			104		Detroit City                  	166
+			105		Sioux Gateway                 	181
+			106		Dubuque Regional              	101
+			107		Rogue Valley Intl- M          	74
+			108		General Edward Lawrence Logan 	None
+			109		Worcester Muni                	151
+			110		Kalamazoo/Battle Creek Interna	151
+			111		Detroit Metropolitan Wayne Cou	151
+			112		Binghamton Regional/Edwin A Li	151
+			113		Greater Rockford              	117
+			114		Elmira/Corning Regional       	151
+			115		Klamath Falls Intll           	74
+			116		Erie Intl                     	151
+			117		Chicago O'hare Intl           	181
+			118		Bradley Intl                  	108
+			119		Cedar Rapids Muni             	181
+			120		William B. Heilig Field       	141
+			121		Merrill C Meigs               	162
+			122		Chicago Midway                	181
+			123		Jack Mc Namara Field          	137
+			124		Theodore Francis Green State  	146
+			125		Michiana Rgnl Transportation C	151
+			126		Toledo Express                	151
+			127		Des Moines Intl               	181
+			128		Stewart Int'l                 	151
+			129		Quad-City                     	181
+			130		Cleveland-Hopkins Intl        	151
+			131		Wilkes-Barre/Scranton Intl    	151
+			132		Eppley Airfield               	181
+			133		Tweed-New Haven               	135
+			134		Youngstown-Warren Regional    	138
+			135		Westchester County            	151
+			136		Fort Wayne Intll              	151
+			137		Arcata                        	182
+			138		Akron-Canton Regional         	160
+			139		Lincoln Muni                  	181
+			140		University Park               	156
+			141		Elko Muni-J.C. Harris Field   	165
+			142		Long Island Mac Arthur        	146
+			143		Salt Lake City Intl           	181
+			144		Burlington Regional           	181
+			145		La Guardia                    	108
+			146		Newark Intl                   	108
+			147		Greater Peoria Regional       	181
+			148		Lehigh Valley Intll           	151
+			149		John F Kennedy Intl           	108
+			150		Redding Muni                  	200
+			151		Pittsburgh Intll              	None
+			152		Yampa Valley                  	165
+			153		Bloomington/Normal            	181
+			154		Purdue University             	170
+			155		Mercer County                 	151
+			156		Harrisburg Intll              	151
+			157		University Of Illinois-Willard	181
+			158		Port Columbus Intl            	151
+			159		Quincy Muni Baldwin Field     	181
+			160		James M Cox Dayton Intl       	151
+			161		Philadelphia Intl             	151
+			162		Capital                       	181
+			163		Decatur                       	181
+			164		Chico Muni                    	200
+			165		Stapleton Intl                	181
+			166		Indianapolis Intl             	190
+			167		Eagle County Regional         	165
+			168		Reno/Tahoe Intll              	165
+			169		Atlantic City Intll           	151
+			170		Hulman Regional               	157
+			171		Kansas City Intl              	181
+			172		Aspen-Pitkin Co/Sardy Field   	165
+			173		Baltimore-Washington Intl     	151
+			174		Walker Field                  	165
+			175		Cincinnati/Northern Kentucky I	151
+			176		Washington Dulles Intl        	151
+			177		Lake Tahoe                    	200
+			178		Washington National           	151
+			179		Columbia Regional             	181
+			180		City Of Colorado Springs Muni 	181
+			181		Lambert-St Louis Intl         	None
+			182		Sacramento Metropolitan       	165
+			183		Gunnison County               	165
+			184		Sonoma County                 	200
+			185		Yeager                        	151
+			186		Tri-State/Milton J.Ferguson Fi	151
+			187		Pueblo Memorial               	180
+			188		Louisville Intl               	216
+			189		Charlottesville-Albemarle     	176
+			190		Evansville Regional           	None
+			191		Blue Grass                    	216
+			192		Stockton Metropolitan         	200
+			193		Greenbrier Valley             	220
+			194		Williamson County Regional    	181
+			195		Forney Aaf                    	181
+			196		Metropolitan Oakland Intl     	200
+			197		Wichita Mid-Continent         	181
+			198		Modesto City-County--Harry Sha	212
+			199		Mammoth Lakes                 	212
+			200		San Francisco Intl            	181
+			201		Richmond Intll                	151
+			202		San Jose Intll                	181
+			203		Roanoke Regional/Woodrum Field	176
+			204		Merced Municipal/Macready Fiel	212
+			205		Springfield Regional          	181
+			206		Cape Girardeau Regional       	181
+			207		Durango-La Plata County       	257
+			208		Joplin Regional               	181
+			209		Newport News/Williamsburg Inte	151
+			210		Barkley Regional              	181
+			211		Norfolk Intl                  	151
+			212		Fresno Air Terminal           	165
+			213		Monterey Peninsula            	200
+			214		Tri-Cities Regional Tn/Va     	151
+			215		Tulsa Intl                    	181
+			216		Nashville Intll               	None
+			217		Piedmont Triad Intll          	216
+			218		Mc Carran Intl                	181
+			219		Drake Field                   	181
+			220		Raleigh-Durham Intll          	216
+			221		Mc Ghee Tyson                 	216
+			222		Asheville Regional            	229
+			223		Meadows Field                 	241
+			224		Will Rogers World             	181
+			225		Fort Smith Regional           	181
+			226		Kinston Regional Jetport At St	229
+			227		San Luis Obispo County-Mc Ches	200
+			228		Amarillo Intl                 	260
+			229		Charlotte/Douglas Intl        	216
+			230		Flagstaff Pulliam             	257
+			231		Memphis Intl                  	216
+			232		Albuquerque Intl              	181
+			233		Lovell Field                  	254
+			234		Fayetteville Regional/Grannis 	229
+			235		Santa Maria Pub/Capt G Allan H	227
+			236		Greenville-Spartanburg        	229
+			237		Albert J Ellis                	229
+			238		Adams Field                   	216
+			239		Huntsville Intl-Carl T Jones F	216
+			240		Lawton Muni                   	260
+			241		Santa Barbara Muni            	244
+			242		New Hanover Intll             	229
+			243		Oxnard                        	247
+			244		Burbank-Glendale-Pasadena     	245
+			245		Ontario Intl                  	181
+			246		Sheppard Afb/Wichita Falls Mun	260
+			247		Los Angeles Intl              	181
+			248		Columbia Metropolitan         	229
+			249		Palm Springs Regional         	181
+			250		Long Beach /Daugherty Field/  	257
+			251		Myrtle Beach Intl             	229
+			252		John Wayne Airport-Orange Coun	181
+			253		Lubbock Intl                  	260
+			254		The William B Hartsfield Atlan	216
+			255		Birmingham Intl               	216
+			256		Texarkana Regional-Webb Field 	260
+			257		Phoenix Sky Harbor Intl       	181
+			258		Bush Field                    	254
+			259		Charleston Afb/Intl           	254
+			260		Dallas/Fort Worth Intl        	216
+			261		Dallas Love Field             	238
+			262		San Diego Intl-Lindbergh Fld  	181
+			263		Yuma Mcas/Yuma Intl           	257
+			264		Columbus Metropolitan         	254
+			265		Monroe Regional               	270
+			266		Shreveport Regional           	270
+			267		Abilene Regional              	260
+			268		Gregg County                  	260
+			269		Tyler Pounds Field            	260
+			270		Jackson Intll                 	216
+			271		Dannelly Field                	255
+			272		Savannah Intll                	254
+			273		Tucson Intl                   	181
+			274		Midland Intll                 	260
+			275		El Paso Intl                  	260
+			276		Waco Regional                 	260
+			277		Alexandria Esler Regional     	260
+			278		Mathis Field                  	260
+			279		Killeen Muni                  	260
+			280		Mobile Regional               	216
+			281		Easterwood Field              	260
+			282		Baton Rouge Metropolitan, Ryan	216
+			283		Jacksonville Intl             	216
+			284		Eglin Afb                     	231
+			285		Pensacola Regional            	216
+			286		Tallahassee Regional          	254
+			287		Robert Mueller Muni           	231
+			288		Panama City-Bay Co Intl       	254
+			289		Lafayette Regional            	292
+			290		Lake Charles Regional         	260
+			291		New Orleans Intl/Moisant Fld/ 	216
+			292		Houston Intercontinental      	216
+			293		Jefferson County              	260
+			294		Gainesville Regional          	254
+			295		William P Hobby               	216
+			296		San Antonio Intl              	216
+			297		Daytona Beach Intl            	254
+			298		Orlando Intl                  	216
+			299		Melbourne Intll               	254
+			300		Tampa Intl                    	216
+			301		St Petersburg/Clearwater Intl 	309
+			302		Corpus Christi Intl           	295
+			303		Laredo Intl                   	260
+			304		Sarasota/Bradenton Intl       	300
+			305		Palm Beach Intl               	298
+			306		Southwest Florida Intl        	300
+			307		Rio Grande Valley Intl        	295
+			308		Mc Allen Miller Intl          	292
+			309		Fort Lauderdale/Hollywood Intl	216
+			310		Miami Intl                    	216
+			311		Lihue                         	312
+			312		Honolulu Intl                 	181
+			313		Molokai                       	315
+			314		Kapalua                       	315
+			315		Kahului                       	247
+			316		Lanai                         	315
+			317		Keahole-Kona Intll            	247
+			318		Hilo Intll                    	317
+			319		Rafael Hernandez              	310
+			320		Luis Munoz Marin Intl         	216
+			321		Cyril E King                  	254
+			322		Eugenio Maria De Hostos       	320
+			323		Mercedita                     	320
+			324		Alexander Hamilton            	320
+			325		Johnston Atoll                	312
+			326		Saipan Intl                   	328
+			327		Rota Intl                     	328
+			328		Guam Intll                    	312
+			329		Babelthuap/Koror              	328
+			330		Pago Pago Intl                	247
+			331		West Tinian		326

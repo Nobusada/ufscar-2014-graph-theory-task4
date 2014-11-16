@@ -23,6 +23,7 @@ def dijkstra(G, seed):
     # k = 1, apenas uma semente
     if (type(seed) is int):
         Lambda[seed] = 0
+        Pi[seed] = seed
     # k != 1, varias semestes
     else:
         for s in seed:
