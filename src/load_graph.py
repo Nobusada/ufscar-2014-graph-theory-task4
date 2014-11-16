@@ -1,3 +1,6 @@
+__author__ = 'Thales Menato'
+__author__ = 'Daniel Nobusada'
+
 import numpy as np
 import networkx as nx
 
