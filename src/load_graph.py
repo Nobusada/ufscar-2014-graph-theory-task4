@@ -5,6 +5,22 @@ import numpy as np
 import networkx as nx
 
 def load_graph(graph_path, label_path):
+    """
+        Carrega os arquivos para simulacao na estrutura grafo do NetworkX
+
+    Parametros
+    ----------
+    graph_path: string
+        Path para o arquivo contendo a matriz de adjacencia
+
+    label_path: string
+        Path para o arquivo contendo os nomes dos vertices
+
+    Return
+    ------
+    G
+        estrutura grafo da networkx
+    """
 
     adj_matrix = np.loadtxt(graph_path)
     labels = np.loadtxt(label_path, dtype=basestring, delimiter='\n')
@@ -28,5 +44,6 @@ def load_graph(graph_path, label_path):
 
     # Insere as arestas
     G.add_weighted_edges_from(edges_with_weight)
+
     return G
 

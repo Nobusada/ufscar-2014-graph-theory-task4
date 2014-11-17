@@ -16,8 +16,13 @@ data = {
     'usair97':{'dist':data_path + 'USAir97.txt','name':data_path + 'USAir_names.txt'}
     }
 
-
 if __name__ == '__main__':
+    """
+    Observacao: Algumas vezes o script esta entrando em loop infinito,
+                caso demore mais que 5~10 segundos para haver o primeiro
+                output com o tempo de geracao das imagens no console,
+                favor abortar e executar novamente.
+    """
     inicio = datetime.datetime.now()
 
     # Simulacao do grafo UK12, com k = 2
@@ -53,7 +58,7 @@ if __name__ == '__main__':
     data['uk12']['b']['pi'], \
     data['uk12']['b']['h'] = dijkstra(data['uk12']['grafo'], data['uk12']['b']['seeds'])
 
-# Simulacao do grafo WG59, com k = 3
+    # Simulacao do grafo WG59, com k = 3
     data['wg59']['a'] = {}
     data['wg59']['b'] = {}
     data['wg59']['lbl'] = []
@@ -96,7 +101,7 @@ if __name__ == '__main__':
     data['wg59']['b']['pi'], \
     data['wg59']['b']['h'] = dijkstra(data['wg59']['grafo'], data['wg59']['b']['seeds'])
 
-# Simulacao do grafo USAir97, com k = 5
+    # Simulacao do grafo USAir97, com k = 5
     data['usair97']['a'] = {}
     data['usair97']['b'] = {}
     data['usair97']['lbl'] = []

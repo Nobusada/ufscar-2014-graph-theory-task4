@@ -5,14 +5,36 @@ import numpy as np
 import networkx as nx
 
 def dijkstra(G, seed):
-#   Como referencia foi utilizado o pseudocode encontrado em:
-#       https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
-#   Codigo em Python por Andre Walker e Camilo Moreira:
-#       https://github.com/andrewalker/grafos/blob/master/Dijkstra.py
-#   e no codigo fornecido pelo prof. em sala de aula
+    """
+    Como referencia foram utilizadas as seguintes fontes:
+        Pseudo-codigo:  https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+        codigo em Python por Andre Walker e Camilo Moreira:
+            https://github.com/andrewalker/grafos/blob/master/Dijkstra.py
+        codigo fornecido pelo prof. em sala de aula
 
-    # Lambda: weight de cada aresta
-    # Pi: predecessor de cada vertice
+    Parametros
+    ----------
+    G: graph
+        Grafo onde a funcao sera executada
+
+    seed:
+        Lista contendo os vertices que serao utilizados como semente
+
+    Return
+    ------
+    Lambda: dictionary
+        Dicionario contendo os vertices como chaves e a distancia deles
+        ate a sementes a qual estao conectados
+
+    Pi: dictionary
+        Dicionario contendo os vertices como chaves e seus predecessores
+
+    H: graph
+        Grafo gerado a partir do grafo original vazio e entao preenchido
+        a partir do Pi (lista de predecessores)
+
+    """
+
     Lambda = {}
     Pi = {}
 
@@ -28,25 +50,22 @@ def dijkstra(G, seed):
     else:
         for s in seed:
             Lambda[s] = 0
-    Q = G.nodes()
 
+    Q = G.nodes()
     # Loop principal
     while Q:
         # smallest = infinito para comparacao
         # u sempre primeiro valor (garante existencia)
         smallest = np.inf
         u = Q[0]
-
         # ao final do loop, u contem a menor distancia e smallest o menor valor
         # e recebe os vertices (indice), w os pesos dos vertices (valor)
         for e, w in Lambda.items():
             if (w < smallest) and (e in Q):
                 smallest = w
                 u = e
-
         # remover u de Q
         del Q[Q.index(u)]
-
         # loop passando por todos os vertices vizinhos de u
         for v in G.neighbors(u):
             alt = Lambda[u] + G[u][v]['weight']
@@ -57,11 +76,9 @@ def dijkstra(G, seed):
 
     # Criar novo grafo vazio a partir do grafo original
     H = nx.create_empty_copy(G)
-
     # Nomeia todos os vertices
     for v, name in G.nodes(data=True):
         H.node[v] = name
-
     # Adiciona arestas aos predecessores de cada vertice obtido no Dijkstra
     for v,u,data in G.edges(data=True):
         if (Pi[u] is v) or (Pi[v] is u and not nx.is_directed(H)):
