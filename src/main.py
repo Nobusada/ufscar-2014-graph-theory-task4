@@ -7,6 +7,7 @@ from dijkstra import *
 from write_simulation import write_simulation
 import networkx as nx
 import numpy as np
+import datetime
 
 data_path = '../data/'
 data = {
@@ -17,7 +18,9 @@ data = {
 
 
 if __name__ == '__main__':
-# Simulacao do grafo UK12, com k = 2
+    inicio = datetime.datetime.now()
+
+    # Simulacao do grafo UK12, com k = 2
     data['uk12']['a'] = {}
     data['uk12']['b'] = {}
     data['uk12']['lbl'] = []
@@ -141,7 +144,12 @@ if __name__ == '__main__':
     # Fim das simulacoes
 
     # Escrita dos resultados
-    # Escreve arquivo txt com dados obtidos da simulacao
-    write_simulation(data)
+    uk12 = True
+    wg59 = True
+    usair97 = True
     # Gera imagens das comunidades encontradas
-    write_images(data)
+    write_images(data, uk12=uk12, wg59=wg59, usair97=usair97)
+    # Escreve arquivo txt com dados obtidos da simulacao
+    write_simulation(data, uk12=uk12, wg59=wg59, usair97=usair97)
+
+    print "\nTempo total execucao:\t\t" + str(datetime.datetime.now() - inicio)
