@@ -6,135 +6,90 @@ def write_simulation(data):
     uk12_data = \
         "Grafo UK12:\n" \
         "\n\ta) Sementes utilizadas: " + str(data['uk12']['a']['seeds'])+ "\n" \
-        "\t\tLambda:\n"
-    for v, w in data['uk12']['a']['lambda'].items():
-        uk12_data += "\t\t\t" + str(v) + "\t\t" + str(data['uk12']['lbl'][v])
-        if (len(data['uk12']['lbl'][v]) >= 8):
-            uk12_data += "\t\t" + str(w) + "\n"
+        "\t\tVertice\t\t\tLabel\t\tPi\t\t\tLambda\n"
+    for i in data['uk12']['grafo'].nodes():
+        uk12_data += "\t\t\t" + str(i) + "\t\t" +\
+              str(data['uk12']['lbl'][i])
+        if(len(str(str(data['uk12']['lbl'][i]))) > 7):
+            uk12_data += "\t\t"
         else:
-            uk12_data += "\t\t\t" + str(w) + "\n"
-    uk12_data += "\t\tPi:\n"
-    for v, w in data['uk12']['a']['pi'].items():
-        uk12_data += "\t\t\t" + str(v) + "\t\t" + str(data['uk12']['lbl'][v])
-        if (len(data['uk12']['lbl'][v]) >= 8):
-            uk12_data += "\t\t" + str(w) + "\n"
-        else:
-            uk12_data += "\t\t\t" + str(w) + "\n"
+            uk12_data += "\t\t\t"
+        uk12_data += str(data['uk12']['a']['pi'][i]) + "\t\t\t" +\
+              str(data['uk12']['a']['lambda'][i]) + "\n"
+
     uk12_data +="\n\tb) Sementes utilizadas: " + str(data['uk12']['b']['seeds'])+ "\n"\
-        "\t\tLambda:\n"
-    for v, w in data['uk12']['b']['lambda'].items():
-        uk12_data += "\t\t\t" + str(v) + "\t\t" + str(data['uk12']['lbl'][v])
-        if (len(data['uk12']['lbl'][v]) >= 8):
-            uk12_data += "\t\t" + str(w) + "\n"
+        "\t\tVertice\t\t\tLabel\t\tPi\t\t\tLambda\n"
+    for i in data['uk12']['grafo'].nodes():
+        uk12_data += "\t\t\t" + str(i) + "\t\t" +\
+              str(data['uk12']['lbl'][i])
+        if(len(str(str(data['uk12']['lbl'][i]))) > 7):
+            uk12_data += "\t\t"
         else:
-            uk12_data += "\t\t\t" + str(w) + "\n"
-    uk12_data += "\t\tPi:\n"
-    for v, w in data['uk12']['b']['pi'].items():
-        uk12_data += "\t\t\t" + str(v) + "\t\t" + str(data['uk12']['lbl'][v])
-        if (len(data['uk12']['lbl'][v]) >= 8):
-            uk12_data += "\t\t" + str(w) + "\n"
-        else:
-            uk12_data += "\t\t\t" + str(w) + "\n"
+            uk12_data += "\t\t\t"
+        uk12_data += str(data['uk12']['b']['pi'][i]) + "\t\t\t" +\
+              str(data['uk12']['b']['lambda'][i]) + "\n"
 
     # Gera relatorio para grafo WG59
     wg59_data = \
         "\nGrafo WG59:\n" \
         "\n\ta) Sementes utilizadas: " + str(data['wg59']['a']['seeds'])+ "\n" \
-        "\t\tLambda:\n"
-    for v, w in data['wg59']['a']['lambda'].items():
-        wg59_data += "\t\t\t" + str(v) + "\t\t" + str(data['wg59']['lbl'][v])
-        if (len(data['wg59']['lbl'][v]) >= 12):
-            wg59_data += "\t" + str(w) + "\n"
-        elif (len(data['wg59']['lbl'][v]) >= 8):
-            wg59_data += "\t\t" + str(w) + "\n"
-        elif (len(data['wg59']['lbl'][v]) >= 4):
-            wg59_data += "\t\t\t" + str(w) + "\n"
+        "\t\tVertice\t\t\tLabel\t\tPi\t\t\tLambda\n"
+    for i in data['wg59']['grafo'].nodes():
+        wg59_data += "\t\t\t" + str(i) + "\t\t" +\
+              str(data['wg59']['lbl'][i])
+        if(len(data['wg59']['lbl'][i]) >= 12):
+            wg59_data += "\t"
+        elif(len(data['wg59']['lbl'][i]) >= 8):
+            wg59_data += "\t\t"
+        elif(len(data['wg59']['lbl'][i]) >= 4):
+            wg59_data += "\t\t\t"
         else:
-            wg59_data += "\t\t\t\t" + str(w) + "\n"
-    wg59_data += "\t\tPi:\n"
-    for v, w in data['wg59']['a']['pi'].items():
-        wg59_data += "\t\t\t" + str(v) + "\t\t" + str(data['wg59']['lbl'][v])
-        if (len(data['wg59']['lbl'][v]) >= 12):
-            wg59_data += "\t" + str(w) + "\n"
-        elif (len(data['wg59']['lbl'][v]) >= 8):
-            wg59_data += "\t\t" + str(w) + "\n"
-        elif (len(data['wg59']['lbl'][v]) >= 4):
-            wg59_data += "\t\t\t" + str(w) + "\n"
-        else:
-            wg59_data += "\t\t\t\t" + str(w) + "\n"
-    wg59_data +="\n\tb) Sementes utilizadas: " + str(data['wg59']['b']['seeds'])+ "\n"\
-        "\t\tLambda:\n"
-    for v, w in data['wg59']['b']['lambda'].items():
-        wg59_data += "\t\t\t" + str(v) + "\t\t" + str(data['wg59']['lbl'][v])
-        if (len(data['wg59']['lbl'][v]) >= 12):
-            wg59_data += "\t" + str(w) + "\n"
-        elif (len(data['wg59']['lbl'][v]) >= 8):
-            wg59_data += "\t\t" + str(w) + "\n"
-        elif (len(data['wg59']['lbl'][v]) >= 4):
-            wg59_data += "\t\t\t" + str(w) + "\n"
-        else:
-            wg59_data += "\t\t\t\t" + str(w) + "\n"
-    wg59_data += "\t\tPi:\n"
-    for v, w in data['wg59']['b']['pi'].items():
-        wg59_data += "\t\t\t" + str(v) + "\t\t" + str(data['wg59']['lbl'][v])
-        if (len(data['wg59']['lbl'][v]) >= 12):
-            wg59_data += "\t" + str(w) + "\n"
-        elif (len(data['wg59']['lbl'][v]) >= 8):
-            wg59_data += "\t\t" + str(w) + "\n"
-        elif (len(data['wg59']['lbl'][v]) >= 4):
-            wg59_data += "\t\t\t" + str(w) + "\n"
-        else:
-            wg59_data += "\t\t\t\t" + str(w) + "\n"
+            wg59_data += "\t\t\t\t"
+        wg59_data += str(data['wg59']['a']['pi'][i]) + "\t\t\t" +\
+              str(data['wg59']['a']['lambda'][i]) + "\n"
 
-# Gera relatorio para grafo USAir97
+    wg59_data +="\n\tb) Sementes utilizadas: " + str(data['wg59']['b']['seeds'])+ "\n"\
+        "\t\tVertice\t\t\tLabel\t\tPi\t\t\tLambda\n"
+    for i in data['wg59']['grafo'].nodes():
+        wg59_data += "\t\t\t" + str(i) + "\t\t" +\
+              str(data['wg59']['lbl'][i])
+        if(len(data['wg59']['lbl'][i]) >= 12):
+            wg59_data += "\t"
+        elif(len(data['wg59']['lbl'][i]) >= 8):
+            wg59_data += "\t\t"
+        elif(len(data['wg59']['lbl'][i]) >= 4):
+            wg59_data += "\t\t\t"
+        else:
+            wg59_data += "\t\t\t\t"
+        wg59_data += str(data['wg59']['b']['pi'][i]) + "\t\t\t" +\
+              str(data['wg59']['b']['lambda'][i]) + "\n"
+
+    # Gera relatorio para grafo USAir97
     usair97_data = \
         "\nGrafo USAir97:\n" \
         "\n\ta) Sementes utilizadas: " + str(data['usair97']['a']['seeds'])+ "\n" \
-        "\t\tLambda:\n"
-    for v, w in data['usair97']['a']['lambda'].items():
-        usair97_data += "\t\t\t" + str(v) + "\t\t" + str(data['usair97']['lbl'][v])
-        if (len(data['usair97']['lbl'][v]) >= 12):
-            usair97_data += "\t" + str(w) + "\n"
-        elif (len(data['usair97']['lbl'][v]) >= 8):
-            usair97_data += "\t\t" + str(w) + "\n"
-        elif (len(data['usair97']['lbl'][v]) >= 4):
-            usair97_data += "\t\t\t" + str(w) + "\n"
+        "\t\tVertice\t\t\t\t\tLabel\t\t\t\tPi\t\t\tLambda\n"
+    for i in data['usair97']['grafo'].nodes():
+        usair97_data += "\t\t\t" + str(i) + "\t\t" +\
+              str(data['usair97']['lbl'][i])
+        if(len(data['usair97']['lbl'][i]) >= 12):
+            usair97_data += "\t"
         else:
-            usair97_data += "\t\t\t\t" + str(w) + "\n"
-    usair97_data += "\t\tPi:\n"
-    for v, w in data['usair97']['a']['pi'].items():
-        usair97_data += "\t\t\t" + str(v) + "\t\t" + str(data['usair97']['lbl'][v])
-        if (len(data['usair97']['lbl'][v]) >= 12):
-            usair97_data += "\t" + str(w) + "\n"
-        elif (len(data['usair97']['lbl'][v]) >= 8):
-            usair97_data += "\t\t" + str(w) + "\n"
-        elif (len(data['usair97']['lbl'][v]) >= 4):
-            usair97_data += "\t\t\t" + str(w) + "\n"
-        else:
-            usair97_data += "\t\t\t\t" + str(w) + "\n"
+            usair97_data += "\t\t\t\t\t\t"
+        usair97_data += str(data['usair97']['a']['pi'][i]) + "\t\t\t" +\
+              str(data['usair97']['a']['lambda'][i]) + "\n"
+
     usair97_data +="\n\tb) Sementes utilizadas: " + str(data['usair97']['b']['seeds'])+ "\n"\
-        "\t\tLambda:\n"
-    for v, w in data['usair97']['b']['lambda'].items():
-        usair97_data += "\t\t\t" + str(v) + "\t\t" + str(data['usair97']['lbl'][v])
-        if (len(data['usair97']['lbl'][v]) >= 12):
-            usair97_data += "\t" + str(w) + "\n"
-        elif (len(data['usair97']['lbl'][v]) >= 8):
-            usair97_data += "\t\t" + str(w) + "\n"
-        elif (len(data['usair97']['lbl'][v]) >= 4):
-            usair97_data += "\t\t\t" + str(w) + "\n"
+        "\t\tVertice\t\t\t\t\tLabel\t\t\t\tPi\t\t\tLambda\n"
+    for i in data['usair97']['grafo'].nodes():
+        usair97_data += "\t\t\t" + str(i) + "\t\t" +\
+              str(data['usair97']['lbl'][i])
+        if(len(data['usair97']['lbl'][i]) >= 12):
+            usair97_data += "\t"
         else:
-            usair97_data += "\t\t\t\t" + str(w) + "\n"
-    usair97_data += "\t\tPi:\n"
-    for v, w in data['usair97']['b']['pi'].items():
-        usair97_data += "\t\t\t" + str(v) + "\t\t" + str(data['usair97']['lbl'][v])
-        if (len(data['usair97']['lbl'][v]) >= 12):
-            usair97_data += "\t" + str(w) + "\n"
-        elif (len(data['usair97']['lbl'][v]) >= 8):
-            usair97_data += "\t\t" + str(w) + "\n"
-        elif (len(data['usair97']['lbl'][v]) >= 4):
-            usair97_data += "\t\t\t" + str(w) + "\n"
-        else:
-            usair97_data += "\t\t\t\t" + str(w) + "\n"
+            usair97_data += "\t\t\t\t\t\t"
+        usair97_data += str(data['usair97']['b']['pi'][i]) + "\t\t\t" +\
+              str(data['usair97']['b']['lambda'][i]) + "\n"
 
     # Escreve todos os relatorio no arquivo '/generated-data/simulation-results.txt'
     try:

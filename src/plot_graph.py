@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 def plot_weighted_graph(G,
                         pos=None,
+                        pi=None,
                         writeNodeLabel = False,
                         writeEdgeLabel = False,
                         iterations=100,
@@ -30,6 +31,7 @@ def plot_weighted_graph(G,
     plt.margins(0)
     plt.axis('off')
 
+    # Se nao foi passado as posicoes dos vertices, calcular elas
     if (pos is None):
         pos = nx.spring_layout(G, k=k, iterations=iterations)
 
@@ -37,21 +39,62 @@ def plot_weighted_graph(G,
     if(seeds is not None):
         # Obter a lista de vertices ligados a cada semente utilizada
         nodelist = {}
-        for s in seeds:
-            nodelist[s] = [s]
-            for v in G.nodes():
-                # se estiver conectado
-                if (nx.node_connectivity(G, v, s) is 1):
-                    nodelist[s].append(v)
+        Q = G.nodes()
 
-        for i in range(0, len(seeds)):
+        # Inicializacao sementes em suas nodelist e remocao da lista de vertices
+        for s in seeds:
             try:
-                nx.draw_networkx_nodes(G, pos,
-                                       node_size=node_size,
-                                       node_color=colors[i],
-                                       nodelist = nodelist.items()[i][1])
-            except Exception:
-                pass
+                nodelist[s] = [s]
+                del Q[Q.index(s)]
+            except IndexError:
+                print "Erro na plotagem : imagem " + str(img_name)
+                print "Sementes: " + str(seeds)
+                print "Nodelist: " + str(nodelist)
+                exit(-1)
+            except ValueError:
+                print "Erro na plotagem : imagem " + str(img_name)
+                print "Sementes: " + str(seeds)
+                print "Nodelist: " + str(nodelist)
+                exit(-1)
+        # Enquanto houver vertices
+        while Q:
+            temp = []
+            u = Q[0]
+            del Q[Q.index(u)]
+
+            # Lista de vertices a partir de u ate semente
+            while u is not None:
+                temp.append(u)
+                u = pi[u]
+
+            # Para a lista obtida, o ultimo valor eh a semente portanto
+            # sera inserido na nodelist[ultimo_valor]
+            # todos os vertices obtidos e ja sao removidos de Q (evitar verificacao extra)
+            for i in range(0, len(temp) - 1):
+                if temp[i] not in nodelist[temp[len(temp) - 1]]:
+                    nodelist[temp[len(temp) - 1]].append(temp[i])
+                if temp[i] in Q:
+                    del Q[Q.index(temp[i])]
+
+        # insere vertice na lista de semente em que esta conectado
+        """
+        for s in seeds:
+            if (nx.node_connectivity(G, s, u) is 1):
+                nodelist[s].append(u)
+                del Q[Q.index(u)]
+                print "Connectivity!"
+                print "seed: " + str(s) + " u: " + str(u)
+                print "nodelist: " + str(nodelist)
+                print "Q : " + str(Q)
+        """
+        # Usando a nodelist obtida, para cada semente (indice),
+        # escrever seus vertices com uma cor pre-definida
+        for i in range(0, len(seeds)):
+            nx.draw_networkx_nodes(G, pos,
+                                   node_size=node_size,
+                                   node_color=colors[i],
+                                   nodelist = nodelist.items()[i][1])
+        # desenha as arestas
         nx.draw_networkx_edges(G, pos, width=width)
 
     # Nenhuma semente foi passada, portanto grafo original
@@ -93,12 +136,14 @@ def write_images(data, uk12=True, wg59=True,usair97=True):
                                   writeEdgeLabel=True, writeNodeLabel=True, img_name="uk12__original")
 
         h = data['uk12']['a']['h']
+        pi = data['uk12']['a']['pi']
         plot_weighted_graph(h, pos=pos, title="Grafo uk12 - a", img_name="uk12_a",
-                            seeds=data['uk12']['a']['seeds'], writeEdgeLabel=True, writeNodeLabel=True)
+                            seeds=data['uk12']['a']['seeds'], pi=pi,writeEdgeLabel=True, writeNodeLabel=True)
 
         h = data['uk12']['b']['h']
+        pi = data['uk12']['b']['pi']
         plot_weighted_graph(h, pos=pos, title="Grafo uk12 - b", img_name="uk12_b",
-                            seeds=data['uk12']['b']['seeds'], writeEdgeLabel=True, writeNodeLabel=True)
+                            seeds=data['uk12']['b']['seeds'], pi=pi, writeEdgeLabel=True, writeNodeLabel=True)
 
     # Imagens para o grafo WG59
     if wg59 is True:
@@ -106,11 +151,13 @@ def write_images(data, uk12=True, wg59=True,usair97=True):
                                   node_size= 800, writeNodeLabel=True,iterations=10, img_name="uk59__original")
 
         h = data['wg59']['a']['h']
-        plot_weighted_graph(h, pos=pos, title="Grafo wg59 - a", seeds=data['wg59']['a']['seeds'],
+        pi = data['wg59']['a']['pi']
+        plot_weighted_graph(h, pos=pos, pi=pi, title="Grafo wg59 - a", seeds=data['wg59']['a']['seeds'],
                             writeEdgeLabel=True, writeNodeLabel=True,iterations=10, img_name="uk59_a")
 
         h = data['wg59']['b']['h']
-        plot_weighted_graph(h, pos=pos, title="Grafo wg59 - b", seeds=data['wg59']['b']['seeds'],
+        pi = data['wg59']['b']['pi']
+        plot_weighted_graph(h, pos=pos, pi=pi, title="Grafo wg59 - b", seeds=data['wg59']['b']['seeds'],
                             writeEdgeLabel=True, writeNodeLabel=True,iterations=10, img_name="uk59_b")
 
     # Imagens para o grafo USAir97
@@ -120,11 +167,13 @@ def write_images(data, uk12=True, wg59=True,usair97=True):
                                   width=0.1, figsize=(20,10), img_name="usair97__original")
 
         h = data['usair97']['a']['h']
-        plot_weighted_graph(h, pos=pos, title="Grafo USAir97 - a", seeds=data['usair97']['a']['seeds'],
+        pi = data['usair97']['a']['pi']
+        plot_weighted_graph(h, pos=pos, pi=pi, title="Grafo USAir97 - a", seeds=data['usair97']['a']['seeds'],
                             writeEdgeLabel=True, writeNodeLabel=True,iterations=1,
                             font_size=5, node_size=200, width=0.1, figsize=(20,10), img_name="usair97_a")
 
         h = data['usair97']['b']['h']
-        plot_weighted_graph(h, pos=pos, title="Grafo USAir97 - b", seeds=data['usair97']['b']['seeds'],
+        pi = data['usair97']['b']['pi']
+        plot_weighted_graph(h, pos=pos, pi=pi, title="Grafo USAir97 - b", seeds=data['usair97']['b']['seeds'],
                             writeEdgeLabel=True, writeNodeLabel=True,iterations=1,
                             font_size=5, node_size=200, width=0.1, figsize=(20,10), img_name="usair97_b")

@@ -15,6 +15,7 @@ data = {
     'usair97':{'dist':data_path + 'USAir97.txt','name':data_path + 'USAir_names.txt'}
     }
 
+
 if __name__ == '__main__':
 # Simulacao do grafo UK12, com k = 2
     data['uk12']['a'] = {}
@@ -22,6 +23,8 @@ if __name__ == '__main__':
     data['uk12']['lbl'] = []
 
     data['uk12']['grafo'] = load_graph(data['uk12']['dist'],data['uk12']['name'])
+
+    # Lista com os nomes dos vertices
     for i in data['uk12']['grafo'].nodes(data=True):
         data['uk12']['lbl'].append(i[1]['name'])
 
@@ -58,16 +61,15 @@ if __name__ == '__main__':
 
     # Usaremos a periferia para obter tres sementes espalhadas
     data['wg59']['a']['seeds'] = []
-    for i in range(0, 3):
-        data['wg59']['a']['seeds'].append(
-            nx.periphery(data['wg59']['grafo'])
-            [np.random.randint(0, len(nx.periphery(data['wg59']['grafo'])))])
 
-    # Usaremos um vertice aleatorio e um de seus vizinhos como sementes proximas uma da outra
-    random_v = np.random.randint(0, len(data['wg59']['grafo'].nodes()))
-    # Nao permite que a semente original seja uma das ja utilizadas para o a
-    while random_v in data['wg59']['a']['seeds']:
-        random_v = np.random.randint(0, len(data['wg59']['grafo'].nodes()))
+    periferia = nx.periphery(data['wg59']['grafo'])
+
+    for i in range(0, 3):
+        random_v = periferia[np.random.randint(0, len(periferia))]
+        # Nao permite que a semente original seja uma das ja utilizadas para o a
+        while random_v in data['wg59']['a']['seeds']:
+            random_v = periferia[np.random.randint(0, len(periferia))]
+        data['wg59']['a']['seeds'].append(random_v)
 
     # Primeira semente inserida na lista
     data['wg59']['b']['seeds'] = [random_v]
@@ -102,18 +104,20 @@ if __name__ == '__main__':
 
     # Usaremos a periferia para obter cinco sementes espalhadas
     data['usair97']['a']['seeds'] = []
-    for i in range(0, 5):
-        data['usair97']['a']['seeds'].append(
-            nx.periphery(data['usair97']['grafo'])
-            [np.random.randint(0, len(nx.periphery(data['usair97']['grafo'])))])
 
-    # Usaremos um vertice aleatorio e um de seus vizinhos como sementes proximas uma da outra
-    random_v = np.random.randint(0, len(data['usair97']['grafo'].nodes()))
-    # Nao permite que a semente original seja uma das ja utilizadas para o a
-    while random_v in data['usair97']['a']['seeds']:
-        random_v = np.random.randint(0, len(data['usair97']['grafo'].nodes()))
+    periferia = nx.periphery(data['usair97']['grafo'])
+
+    for i in range(0, 5):
+        random_v = periferia[np.random.randint(0, len(periferia))]
+        # Nao permite que a semente original seja uma das ja utilizadas para o a
+        while random_v in data['usair97']['a']['seeds']:
+            random_v = periferia[np.random.randint(0, len(periferia))]
+        data['usair97']['a']['seeds'].append(random_v)
+
 
     # Primeira semente inserida na lista
+    random_v = np.random.randint(0, len(data['usair97']['grafo'].nodes()))
+
     data['usair97']['b']['seeds'] = [random_v]
 
     # Proximas duas sementes
@@ -137,7 +141,7 @@ if __name__ == '__main__':
     # Fim das simulacoes
 
     # Escrita dos resultados
-    # Gera imagens das comunidades encontradas
-    write_images(data)
     # Escreve arquivo txt com dados obtidos da simulacao
     write_simulation(data)
+    # Gera imagens das comunidades encontradas
+    write_images(data)
