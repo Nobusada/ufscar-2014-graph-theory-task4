@@ -146,7 +146,7 @@ def plot_weighted_graph(G,
 
         # Usando a nodelist obtida, para cada semente (indice),
         # desenhar seus vertices com uma cor pre-definida (colors)
-        for i in range(0, len(seeds)):
+        for i in range(0, len(ordem)):
             nx.draw_networkx_nodes(G, pos,
                                    node_size=node_size,
                                    node_color=colors[i],
@@ -269,7 +269,7 @@ def write_images(data,
         pos, tempo, data['wg59']['nodelist'] = \
             plot_weighted_graph(data['wg59']['grafo'],
                                 title="Grafo wg59 - Original",
-                                img_name="uk59__original",
+                                img_name="wg59__original",
                                 writeNodeLabel=True,
                                 node_size= 1200,
                                 iterations=10,
@@ -283,7 +283,7 @@ def write_images(data,
         pos, tempo, data['wg59']['a']['nodelist'] = \
             plot_weighted_graph(h, pos=pos,
                                 title="Grafo wg59 - a",
-                                img_name="uk59_a",
+                                img_name="wg59_a",
                                 writeNodeLabel=True,
                                 writeEdgeLabel=True,
                                 seeds=data['wg59']['a']['seeds'],
@@ -301,7 +301,7 @@ def write_images(data,
         pos, tempo, data['wg59']['b']['nodelist'] = \
             plot_weighted_graph(h, pos=pos,
                                 title="Grafo wg59 - b",
-                                img_name="uk59_b",
+                                img_name="wg59_b",
                                 writeEdgeLabel=True,
                                 writeNodeLabel=True,
                                 seeds=data['wg59']['b']['seeds'],
