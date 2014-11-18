@@ -53,9 +53,6 @@ if __name__ == '__main__':
 
         # Usaremos um vertice aleatorio e um de seus vizinhos como sementes proximas uma da outra
         random_v = np.random.randint(0, len(data['uk12']['grafo'].nodes()))
-        # Nao permite que a semente original seja uma das ja utilizadas para o a
-        while random_v in data['uk12']['a']['seeds']:
-            random_v = np.random.randint(0, len(data['uk12']['grafo'].nodes()))
 
         data['uk12']['b']['seeds'] = ([random_v,
                      data['uk12']['grafo'].neighbors(random_v)
@@ -93,11 +90,17 @@ if __name__ == '__main__':
             data['wg59']['a']['seeds'].append(random_v)
 
         # Primeira semente inserida na lista
+        random_v = np.random.randint(0, len(data['wg59']['grafo'].nodes()))
+
+        vizinhos = data['wg59']['grafo'].neighbors(random_v)
+        while len(vizinhos) < 2:
+            random_v = np.random.randint(0, len(data['wg59']['grafo'].nodes()))
+            vizinhos = data['wg59']['grafo'].neighbors(random_v)
+
         data['wg59']['b']['seeds'] = [random_v]
 
         # Proximas duas sementes
         for i in range(0, 2):
-            vizinhos = data['wg59']['grafo'].neighbors(random_v)
             random_v = vizinhos[np.random.randint(0, len(vizinhos))]
             # Enquanto o valor random ja estiver na lista de sementes selecionadas para b
             while random_v in data['wg59']['b']['seeds']:
@@ -139,6 +142,11 @@ if __name__ == '__main__':
 
         # Primeira semente inserida na lista
         random_v = np.random.randint(0, len(data['usair97']['grafo'].nodes()))
+
+        vizinhos = data['usair97']['grafo'].neighbors(random_v)
+        while len(vizinhos) < 2:
+            random_v = np.random.randint(0, len(data['usair97']['grafo'].nodes()))
+            vizinhos = data['usair97']['grafo'].neighbors(random_v)
 
         data['usair97']['b']['seeds'] = [random_v]
 
